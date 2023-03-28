@@ -2,15 +2,9 @@
   text-align: center;
 }
 
-.headerTitle {
-  color: white;
-  font-size: 1.3rem;
-  padding: 0;
-  padding-top: 1rem;
-}
 
 .headerTitle {
-  color: white;
+  color: rgb(110, 110, 110);
   font-size: 1.3rem;
   padding: 0;
   padding-top: 1rem;
@@ -23,7 +17,7 @@
 }
 
 .headerSlogan {
-  color: white;
+  color: rgb(96, 88, 88);
   opacity: 0.6;
   padding: 0;
   margin: 0;

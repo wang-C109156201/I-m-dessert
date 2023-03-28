@@ -1,38 +1,94 @@
 .item {
-   background-color: #111828;
+   background-color: #FFFCFB;
    border-radius: 1%;
-   border: solid gray 1px;
    padding: 0;
+   display: flex; 
+   align-content: center;
+   justify-content: center;
+   flex-direction:row;
+   width: 100%;
 }
 
+.img{
+   width: 50%;
+   display: block;
+   height: auto;
+}
+
+.img:hover .overlay {
+   height: 100%;
+   display: flex; 
+   align-content: center;
+   justify-content: center;
+   
+ }
+
+.overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: #4D644750;
+   overflow: hidden;
+   width: 50%;
+   height: 0;
+   transition: .5s ease;
+   display: flex; 
+   align-content: center;
+   justify-content: center;
+ }
+
+ .text {
+   white-space: nowrap; 
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   overflow: hidden;
+   bottom: 5%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+ }
+
 .info {
+   width: 50%;
    padding: 1.2rem;
+   display: flex; 
+   align-content: center;
+   justify-content: center;
+   flex-direction:column;
+
 }
 
 .category {
-   color: white;
-   opacity: 0.4;
+   display: flex;
+   flex-direction:left;
+   color: #323721;
+   opacity: 1; /*透明度*/
    margin-bottom: 0.2rem;
 }
 
 .name {
-   color: white;
+   display: flex;
+   flex-direction:left;
+   color: #323721;
    margin-bottom: 0.5rem;
+   font-weight:bold;
 }
 
 .description {
-   color: white;
-   opacity: 0.6;
+   display: flex;
+   text-align:left;
+   color: #323721;
+   opacity: 1;
    margin-bottom: 1rem;
 }
 
-.link {
-   text-decoration: none;
-   align-self: center;
-   color: #8183ff;
-}
+
 
 .textGray {
-   color: white;
-   opacity: 0.6;
+   display: flex;
+   flex-direction:left;
+   color: #323721;
+   opacity: 1;
 }

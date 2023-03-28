@@ -4,18 +4,24 @@ import styles from './productitem.module.css';
 export default function ProductItem({ product }) {
 
    return (
-      
-      <div className={styles.item}>
-         <a href="/">
-            <img
-               style={{ width: '100%' }}
-               src={product.image}
-               alt={product.name} />
-         </a>
+      <div>         
+         <div className={styles.item}>
+         <div className={styles.img}>
+            <a href={product.link}>
+               <img
+                  style={{ width: '100%'}}
+                  src={product.image}
+                  alt={product.name} />
+               <div className={styles.overlay}>
+                  <div className={styles.text}>一禾堂</div>
+               </div>   
+            </a>
+         </div>
+         
          <div className={styles.info}>
-            <h6 className={styles.category}>
+            <h3 className={styles.category}>
                {product.category}
-            </h6>
+            </h3>
             <h2 className={styles.name}>
                {product.name}
             </h2>
@@ -23,15 +29,14 @@ export default function ProductItem({ product }) {
                {product.description}
             </p>
             <div className={styles.more}>
-               <a href="/" className={styles.link}>
-                  See More ...
-               </a>
                <span
                   className={styles.textGray}>
-                  USD {product.price}.00
+                  TWD {product.price}
                </span>
             </div>
          </div>
       </div>
+      </div>
+      
    );
 }
