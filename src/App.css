@@ -3,46 +3,99 @@
   src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
   , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
 }
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.maincontainer {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin: auto;
+  font-family: SweiGothicCJKtc-Regular;
+}
+/* General Styles */
+/* RWD Container */
+.container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    font-family: SweiGothicCJKtc-Regular;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
   }
-  to {
-    transform: rotate(360deg);
+} 
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+} 
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+} 
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+} 
+
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1500px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* body */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #111828;
+  color: white;
 }
 
-.card {
-  padding: 2em;
+
+/* Layout */
+.mainLayout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: 
+    'header'
+    'content'
+    'footer'
+  ;
+  grid-template-rows: auto 1fr auto;
+  gap: 1em;
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.layoutHeader {
+  grid-area: header;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  background-color: #4D6447;
 }
+
+.layoutFooter {
+  grid-area: footer;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  background-color: #4D6447;
+  width: 100%;
+}
+
+.layoutContent {
+  grid-area: content;
+  background-color: #111828;
+}
+
+
+
+
