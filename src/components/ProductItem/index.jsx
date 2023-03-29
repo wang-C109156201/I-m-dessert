@@ -13,7 +13,7 @@ export default function ProductItem({ product }) {
                   src={product.image}
                   alt={product.name} />
                <div className={styles.overlay}>
-                  <div className={styles.text}>一禾堂</div>
+                  <div className={styles.text}>{product.category}</div>
                </div>   
             </a>
          </div>
@@ -31,7 +31,7 @@ export default function ProductItem({ product }) {
             <div className={styles.more}>
                <span
                   className={styles.textGray}>
-                  TWD {product.price}
+                  NT${product.price}
                </span>
             </div>
          </div>

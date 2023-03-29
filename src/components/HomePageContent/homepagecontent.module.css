@@ -1,5 +1,7 @@
-.img{
+.imgDispalyInDesktop{
     width: 100%;
+    height: auto;
+    background: url("/public/images/偶素甜點-home\ page-1600.png");
 }
 .text{
     display: flex; 
@@ -9,4 +11,23 @@
     margin-top: 50px;
     font-weight:bold;
     letter-spacing: 7px;
+}
+
+@media (min-width: 769px) {
+    .imgDispalyInMobile{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .imgDispalyInDesktop{
+        display: none;
+    }
+    
+}
+  @media (max-width: 576px) {
+    .imgDispalyInDesktop{
+        display: none;
+    }
 }

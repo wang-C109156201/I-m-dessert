@@ -10,7 +10,6 @@ function Home() {
     <div className="maincontainer mainLayout">
       <Header
         className="layoutHeader"
-        title="NORDIC NEST Shopping Cart"
         slogan="An example made by Vite."
       />
       <HomePageContent

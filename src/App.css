@@ -70,7 +70,6 @@ body {
     'footer'
   ;
   grid-template-rows: auto 1fr auto;
-  gap: 1em;
   width: 100%;
 }
 
