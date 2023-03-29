@@ -2,6 +2,11 @@
     width: 100%;
     height: auto;
     background: url("/public/images/偶素甜點-home\ page-1600.png");
+    margin-top: 60px;
+}
+.imgDispalyInMobile{
+    width: 100%;
+    margin-top: 40px;
 }
 .text{
     display: flex; 

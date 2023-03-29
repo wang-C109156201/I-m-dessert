@@ -13,6 +13,7 @@ function Home() {
         slogan="An example made by Vite."
       />
       <HomePageContent
+        className="layoutContent"
         title="人氣精選"
       />
       <ProductList products={products} className="layoutContent" />

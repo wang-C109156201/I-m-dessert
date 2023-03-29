@@ -1,10 +1,14 @@
+import { useState } from "react";
 import styles from "./header.module.css";
-
+import HamburgerMenu from "../HamburgerMenu"
+import NavBar from "../NavBar";
 export default function Header() {
-
+    const [isOnTouch, setIsOnTouch] = useState(false);
     return (
+        
         <div className={styles.header}>
-            <img className={styles.logo} src="/images/icon_logo.png" alt="logo"/>
+            <img className={styles.logo} src="/images/icon_logo.png" alt="logo" />
+            {/* <div className={styles.header}>
             <div className={styles.bar}>
                 <nav className={styles.nav}>
                     <ul>
@@ -16,8 +20,15 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
-            
-        </div>
+            </div> */}
+            <HamburgerMenu
+                onClick={() => setIsOnTouch(!isOnTouch)}
+                isOnTouch={isOnTouch}
+            />
+            <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
+            </div>
+
+
     );
 }
 
