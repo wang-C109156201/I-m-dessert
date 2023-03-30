@@ -3,11 +3,12 @@
     "id": "1tE4nK",
     "category": "綠帶純植物烘培",
     "name": "栗子蒙布朗旦糕",
-    "sku": "sku_313355",
     "price": 76,
     "image": "/images/綠帶純植物烘培-1.png",
+    "Ingredients":"腰果/烏龍茶葉/椰奶/100%檸檬汁/楓糖/植物奶油/豆奶",
+    "Vegan":"全素",
+    "quantity":"5",
     "description": "栗子腰果乃油加上南瓜基底的海綿旦糕， 內餡有著滿滿的有機甘栗丁，再妝點一個完整的法式糖漬栗子與可食用金箔，專屬於栗子控的享受！",
-    "description_long": "The Pom Pom cushion 45x45 cm from the Swedish By On is a pure dream for those who love soft and cosy styles of decor. This wonderful cushion is covered in small, fluffy Pom Poms, which quickly helps you create an inviting and snug feel on your corner sofa, your favourite recliner, or on the bed in the bedroom.",
     "currency": "TWD",
     "link":"https://www.youtube.com/"
   },
@@ -15,22 +16,24 @@
     "id": "IuFGYl",
     "category": "一禾堂",
     "name": "香草籽豆乳餅乾",
-    "sku": "sku_313356",
     "price": 6,
     "image": "/images/一禾堂-1.png",
+    "Ingredients":"腰果/烏龍茶葉/椰奶/100%檸檬汁/楓糖/植物奶油/豆奶",
+    "Vegan":"全素",
+    "quantity":"5",
     "description": "濃豆乳與香草籽的美好，溫柔輕甜栗子腰果乃油加上南瓜基底的海綿旦糕，再妝點一個完整的法式糖漬栗子與可食用金箔，專屬於栗子控的享受！",
-    "description_long": "The beautiful Rustic mug from House Doctor is made of ceramics and has an appealing glaze in grey and blue that contributes to a rustic feeling. Since it's handmade, every mug is unique. Match it with other tableware in the Rustic series.",
     "currency": "TWD"
   },
   {
     "id": "VfcByl",
     "category": "嬉皮烘培",
     "name": "鐵觀音提拉米蘇",
-    "sku": "sku_622147",
     "price": 16,
     "image": "/images/嬉皮烘培-1.png",
+    "Ingredients":"腰果/烏龍茶葉/椰奶/100%檸檬汁/楓糖/植物奶油/豆奶",
+    "Vegan":"全素",
+    "quantity":"5",
     "description": "選用臺灣百年茶店--鐵觀音茶葉細細磨粉，製成滿滿香氣糕體，層層抹上鐵觀音奶餡，今年夏天，送給爸爸最棒的茶味蛋糕 ♡",
-    "description_long": "Cas plays modern with rustic wood, framing the rich color and defined grain of natural oak veneer in dark grey high-gloss lacquer. Tinted warm brown with hints of grey, planks of veneer arrange the nightstand's four drawers in seamless asymmetry.",
     "currency": "TWD"
   }
 ]

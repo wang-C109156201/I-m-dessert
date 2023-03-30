@@ -11,11 +11,6 @@
   transition: all 0.25s linear;
 }
 
-@media (min-width: 768px) {
-  .showMobile {
-    display: none;
-  }
-}
 
 .hamMenu:hover {
   opacity: 1;
@@ -72,3 +67,10 @@
   transform: rotate(-2deg);
   transform: rotate(-45deg);
 }
+
+@media (min-width: 769px) { /*(tablets, 768px and up)*/
+  .showMobile {
+    display: none;
+  }
+}
+

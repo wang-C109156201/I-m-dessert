@@ -1,6 +1,5 @@
 .imgDispalyInDesktop{
     width: 100%;
-    height: auto;
     background: url("/public/images/偶素甜點-home\ page-1600.png");
     margin-top: 60px;
 }
@@ -18,6 +17,15 @@
     letter-spacing: 7px;
 }
 
+.contentStyle{
+    height: 160px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+}
+
+
 @media (min-width: 769px) {
     .imgDispalyInMobile{
         display: none;
@@ -28,6 +36,10 @@
 @media (max-width: 768px) {
     .imgDispalyInDesktop{
         display: none;
+    }
+    .imgDispalyInMobile{
+        height: 63%;/*要修圖片*/
+        width: 100%;
     }
     
 }
