@@ -7,7 +7,7 @@ import styles from './navbar.module.css';
         
         const NavBarContent = () => (
             <>
-                <NavLink to="/products/category/tableware"
+                <NavLink to="/"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     首頁
                 </NavLink>
@@ -19,7 +19,7 @@ import styles from './navbar.module.css';
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     品牌介紹
                 </NavLink>
-                <NavLink to="/products/category/lighting"
+                <NavLink to="/products"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     全部商品
                 </NavLink>
