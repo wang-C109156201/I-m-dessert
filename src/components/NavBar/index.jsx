@@ -11,19 +11,19 @@ import styles from './navbar.module.css';
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     首頁
                 </NavLink>
-                <NavLink to="/products/category/cookware"
+                <NavLink to="/"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     最新消息
                 </NavLink>
-                <NavLink to="/products/category/home-accessories"
+                <NavLink to="/"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     品牌介紹
                 </NavLink>
-                <NavLink to="/products"
+                <NavLink to="/products/category"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     全部商品
                 </NavLink>
-                <NavLink to="/products/category/textile"
+                <NavLink to="/"
                     className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                     聯絡我們
                 </NavLink>  

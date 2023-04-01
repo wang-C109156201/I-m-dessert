@@ -1,4 +1,5 @@
 import styles from './productitem.module.css';
+import { Link } from 'react-router-dom';
 
 export default function ProductItem({ product }) {
 
@@ -6,15 +7,17 @@ export default function ProductItem({ product }) {
       <div>         
          <div className={styles.item}>
             <div className={styles.img}>
-               <a href={product.link}>
+               {/* <a href={product.link}> */}
+               <Link to={`/products/id/${product.id}`}>
                   <img
                      style={{ width: '100%'}}
                      src={product.image}
                      alt={product.name} />
                   <div className={styles.overlay}>
                      <div className={styles.text}>{product.category}</div>
-                  </div>   
-               </a>
+                  </div> 
+               </Link>  
+               {/* </a> */}
             </div>
             
             <div className={styles.info}>
