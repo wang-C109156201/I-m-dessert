@@ -19,6 +19,11 @@
     margin: auto;
     font-family: SweiGothicCJKtc-Regular;
 }
+@media (min-width: 425px) {
+  .container {
+    width: 380px;
+  }
+} 
 
 @media (min-width: 576px) {
   .container {

@@ -22,7 +22,32 @@
 }
 
  
-@media (min-width: 576px) {}
+@media (max-width: 990px) {
+   .footer {
+      width: 100%;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      margin: auto;
+   }
+
+   .content {
+      flex-direction: column;
+   }
+
+   .followUs {
+      display: flex;
+      justify-content: center;
+   }
+   .title{
+      text-align: center;
+   }
+
+   .iconsArea {
+margin-left: 20px;
+   }
+
+}
 
 @media (max-width: 768px) {
    .footer {
