@@ -12,6 +12,7 @@
    justify-content: center;
    flex-direction:row;
    width: 100%;
+   margin-bottom: 30px;
 }
 
 .img{
@@ -181,6 +182,7 @@
       justify-content: center;
       flex-direction:column;
       width: 100%;
+      margin-bottom: 2rem;
    }
    .img{
       position: relative;
@@ -192,6 +194,7 @@
    .category {
       margin-bottom: 0.1rem;
       font-size: 13.5px;
+      margin-top: 0.7rem;
    }
    
    .name {

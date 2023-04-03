@@ -6,7 +6,7 @@
 }
 .imgDispalyInMobile{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .div{
@@ -68,3 +68,4 @@
         display: none;
     }
 }
+

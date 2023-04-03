@@ -1,4 +1,6 @@
 import styles from './productitem.module.css';
+
+import { Link } from 'react-router-dom';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React,{useEffect} from "react";
@@ -11,15 +13,17 @@ export default function ProductItem({ product }) {
       <div>         
          <div data-aos="slide-right" className={styles.item}>
             <div className={styles.img}>
-               <a href={product.link}>
+               {/* <a href={product.link}> */}
+               <Link to={`/products/id/${product.id}`}>
                   <img
                      style={{ width: '100%'}}
                      src={product.image}
                      alt={product.name} />
                   <div className={styles.overlay}>
                      <div className={styles.text}>{product.category}</div>
-                  </div>   
-               </a>
+                  </div> 
+               </Link>  
+               {/* </a> */}
             </div>
             
             <div className={styles.info}>
