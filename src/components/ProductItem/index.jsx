@@ -1,10 +1,15 @@
 import styles from './productitem.module.css';
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React,{useEffect} from "react";
 export default function ProductItem({ product }) {
-
+   useEffect(() => {
+      Aos.init({duration: 3000});
+   }, []);
    return (
+       
       <div>         
-         <div className={styles.item}>
+         <div data-aos="slide-right" className={styles.item}>
             <div className={styles.img}>
                <a href={product.link}>
                   <img
@@ -35,6 +40,8 @@ export default function ProductItem({ product }) {
                </div>
             </div>
          </div>
+         {/* <div data-aos="slide-right"><img src="/images/news-1.png" alt="logo" /></div>
+         <div data-aos="slide-right"><img src="/images/news-1.png" alt="logo" /></div> */}
       </div>
       
    );

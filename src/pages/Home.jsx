@@ -4,6 +4,7 @@ import ProductList from "../components/ProductList";
 import products from "../json/products.json";
 import HomePageContent from "../components/HomePageContent";
 
+
 function Home() {
 
   return (

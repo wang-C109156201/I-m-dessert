@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./header.module.css";
 import HamburgerMenu from "../HamburgerMenu"
 import NavBar from "../NavBar";
+
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
     return (
@@ -26,7 +27,7 @@ export default function Header() {
                 isOnTouch={isOnTouch}
             />
             <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
-            </div>
+        </div>
 
 
     );
