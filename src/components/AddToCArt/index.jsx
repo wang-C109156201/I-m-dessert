@@ -19,7 +19,8 @@ export default function AddToCart({ product, qty }) {
 
   return (
     <Button type="primary" className={styles.btn} onClick={addToCart}>
-      <img className={styles.image} src="/images/basket.svg" />加入購物車
+      {/* <img className={styles.image} src="/images/basket.svg" /> */}
+      加入購物車
     </Button>
   );
 }

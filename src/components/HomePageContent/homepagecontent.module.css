@@ -1,17 +1,19 @@
-.content{
+.content {
     width: 100%;
 }
-.imgDispalyInDesktop{
+
+.imgDispalyInDesktop {
     width: 100%;
     background: url("/public/images/偶素甜點-home\ page-1600.png");
     margin-top: 60px;
 }
-.imgDispalyInMobile{
+
+.imgDispalyInMobile {
     width: 100%;
     margin-top: 60px;
 }
 
-.div{
+.div {
     width: 300px;
     height: 300px;
     background: #000;
@@ -20,22 +22,22 @@
     margin-top: 100px;
 }
 
-.box{
+.box {
     color: #fff;
     line-height: 300px;
 }
 
-.text{
-    display: flex; 
+.text {
+    display: flex;
     align-content: center;
     justify-content: center;
     color: #4D6447;
     margin-top: 50px;
-    font-weight:bold;
+    font-weight: bold;
     letter-spacing: 7px;
 }
 
-.contentStyle{
+.contentStyle {
     height: 160px;
     color: #fff;
     line-height: 160px;
@@ -43,31 +45,68 @@
     background: #364d79;
 }
 
-.Carousel{
+.Carousel {
     width: 100%;
     height: auto;
 }
 
+.news {
+    width: 30%;
+
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; */
+}
+
+.newsbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
 @media (min-width: 769px) {
-    .imgDispalyInMobile{
+    .imgDispalyInMobile {
         display: none;
     }
-    
+
+
+}
+
+@media (min-width: 768px) {
+
 }
 
 @media (max-width: 768px) {
-    .imgDispalyInDesktop{
+    .imgDispalyInDesktop {
         display: none;
     }
-    .imgDispalyInMobile{
-        height: 63%;/*要修圖片*/
+
+    .imgDispalyInMobile {
+        height: 63%;
+        /*要修圖片*/
         width: 100%;
     }
-    
-}
-  @media (max-width: 576px) {
-    .imgDispalyInDesktop{
-        display: none;
+    /* .carousel {
+        display: none!important;
+    } */
+    .news {
+        width: 70%;
     }
+
 }
 
+@media (max-width: 576px) {
+    .imgDispalyInDesktop {
+        display: none;
+    }
+    .news {
+        width: 85%;
+    
+    }
+
+}
