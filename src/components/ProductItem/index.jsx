@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 export default function ProductItem({ product }) {
    useEffect(() => {
       Aos.init({duration: 4000});

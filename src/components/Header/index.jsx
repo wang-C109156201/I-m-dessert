@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./header.module.css";
 import HamburgerMenu from "../HamburgerMenu"
 import NavBar from "../NavBar";
+import { UserOutlined } from '@ant-design/icons'
 
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
                 isOnTouch={isOnTouch}
             />
             <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
+            <UserOutlined style={{color:"black",fontSize:"50px"}} />
         </div>
 
 

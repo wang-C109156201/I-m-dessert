@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    display:"flex";
+    align-content:"center";
+    justify-content:"center";
+}
+.logo{
+    
+    margin-top:"150px";
+    
+}
+.logo_img{
+    border-radius:"50%";
+    border:"2px #4D6447 solid";
+}
