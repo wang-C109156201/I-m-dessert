@@ -1,4 +1,6 @@
-
+.content{
+    width: 100%;
+}
 .imgDispalyInDesktop{
     width: 100%;
     background: url("/public/images/偶素甜點-home\ page-1600.png");
@@ -6,7 +8,7 @@
 }
 .imgDispalyInMobile{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .div{

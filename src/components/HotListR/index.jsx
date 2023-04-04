@@ -1,13 +1,17 @@
 import styles from './hotlistR.module.css';
 import { Row, Col } from "antd";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React,{useEffect} from "react";
 
 export default function HotListR() {
-
+   useEffect(() => {
+      Aos.init({duration: 3000});
+   }, []);
    return (
       <div className="container">
-         <Col align="middle">
-
-            <div>
+         <Col  align="middle">
+            <div >
                <div className={styles.item}>
                   <div className={styles.info}>
                      <h3 className={styles.category}>
@@ -21,15 +25,15 @@ export default function HotListR() {
                      </p>
                      <div className={styles.more}>
                         {/* <span
-                     className={styles.textGray}>
-                     NT${product.price}
-                  </span> */}
+                           className={styles.textGray}>
+                           NT${product.price}
+                        </span> */}
                      </div>
                   </div>
-                  <div className={styles.img}>
+                  <div data-aos="fade-up-left" className={styles.img}>
                      <a href="">
                         <img
-                           style={{ width: '100%' }}
+                           style={{ width: '100%', }}
                            src="/images/一禾堂-1.png"
                            alt="一禾堂" />
                         <div className={styles.overlay}>

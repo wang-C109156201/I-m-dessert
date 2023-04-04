@@ -1,15 +1,20 @@
 import styles from './hotlist.module.css';
 import { Row, Col } from "antd";
 import HotListR from "../HotListR";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React,{useEffect} from "react";
 
 export default function HotList() {
-
+   useEffect(() => {
+      Aos.init({duration: 2000});
+   }, []);
    return (
       <div className="container">
-         <Col align="middle">
+         <Col  align="middle">
             <div>
                <div className={styles.item}>
-                  <div className={styles.img}>
+                  <div  data-aos="fade-up-right" className={styles.img}>
                      <a href="">
                         <img
                            style={{ width: '100%' }}
@@ -33,9 +38,9 @@ export default function HotList() {
                      </p>
                      <div className={styles.more}>
                         {/* <span
-                     className={styles.textGray}>
-                     NT${product.price}
-                  </span> */}
+                           className={styles.textGray}>
+                           NT${product.price}
+                        </span> */}
                      </div>
                   </div>
                </div>
@@ -44,8 +49,8 @@ export default function HotList() {
             <HotListR />
 
             <div>
-               <div className={styles.item}>
-                  <div className={styles.img}>
+               <div  className={styles.item}>
+                  <div data-aos="fade-up-right" className={styles.img}>
                      <a href="">
                         <img
                            style={{ width: '100%' }}
@@ -69,9 +74,9 @@ export default function HotList() {
                      </p>
                      <div className={styles.more}>
                         {/* <span
-                     className={styles.textGray}>
-                     NT${product.price}
-                  </span> */}
+                           className={styles.textGray}>
+                           NT${product.price}
+                        </span> */}
                      </div>
                   </div>
                </div>

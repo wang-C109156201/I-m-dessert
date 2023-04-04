@@ -1,19 +1,21 @@
+import React,{useEffect} from "react";
 import styles from './productitem.module.css';
-
 import { Link } from 'react-router-dom';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import React,{useEffect} from "react";
+
+
 export default function ProductItem({ product }) {
    useEffect(() => {
-      Aos.init({duration: 3000});
+      Aos.init({duration: 4000});
+      Aos.refresh();
    }, []);
    return (
        
       <div>         
-         <div data-aos="slide-right" className={styles.item}>
+         <div className={styles.item}>
             <div className={styles.img}>
-               {/* <a href={product.link}> */}
+               <a href={product.link}>
                <Link to={`/products/id/${product.id}`}>
                   <img
                      style={{ width: '100%'}}
@@ -23,29 +25,17 @@ export default function ProductItem({ product }) {
                      <div className={styles.text}>{product.category}</div>
                   </div> 
                </Link>  
-               {/* </a> */}
+               </a>
             </div>
-            
-            <div className={styles.info}>
-               <h3 className={styles.category}>
-                  {product.category}
-               </h3>
-               <h2 className={styles.name}>
-                  {product.name}
-               </h2>
-               <p className={styles.description}>
-                  {product.description}
-               </p>
-               <div className={styles.more}>
-                  {/* <span
-                     className={styles.textGray}>
-                     NT${product.price}
-                  </span> */}
-               </div>
+            <h2 className={styles.name}>
+               {product.name}
+            </h2>
+            <div
+               className={styles.textGray}>
+               NT${product.price}
             </div>
+           
          </div>
-         {/* <div data-aos="slide-right"><img src="/images/news-1.png" alt="logo" /></div>
-         <div data-aos="slide-right"><img src="/images/news-1.png" alt="logo" /></div> */}
       </div>
       
    );
