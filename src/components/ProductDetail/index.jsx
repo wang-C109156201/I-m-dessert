@@ -4,7 +4,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 import { Row, Col, Select, Carousel } from "antd";
 import { useSearchParams } from 'react-router-dom';
-import AddToCArt from "../AddToCArt"
+import AddToCart from '../AddToCArt';
 import styles from "./productdetail.module.css"
 import Slider from "react-slick";
 const { Option } = Select;
@@ -153,7 +153,7 @@ function ProductDetail({ product }) {
                            <Button className={styles.btn}>
                               立即購買
                            </Button>
-                           <AddToCArt product={product} qty={qty} />
+                           <AddToCart product={product} qty={qty} />
                         </Row>
                      </div>
                   </div>

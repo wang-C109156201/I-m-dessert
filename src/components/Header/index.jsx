@@ -3,6 +3,7 @@ import styles from "./header.module.css";
 import HamburgerMenu from "../HamburgerMenu"
 import NavBar from "../NavBar";
 import { UserOutlined } from '@ant-design/icons'
+import CartSummary from "../CartSummary";
 
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
                 onClick={() => setIsOnTouch(!isOnTouch)}
                 isOnTouch={isOnTouch}
             />
+            <CartSummary/>
             <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
             <UserOutlined style={{color:"black",fontSize:"50px"}} />
         </div>
