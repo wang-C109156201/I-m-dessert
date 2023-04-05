@@ -1,8 +1,8 @@
 .cartSummary {
     display: inline-block;
     position: absolute;
-    top: 1.5rem;
-    right: 0.5rem;
+    top: 2.2rem;
+    right:6rem;
     cursor: pointer;
   }
   
@@ -14,6 +14,6 @@
  
   @media (min-width: 768px) {
     .cartSummary {
-       right: 1.5rem;
+       right: 2rem;
     }
   }

@@ -45,7 +45,7 @@ export default function HomePageContent({ title }) {
                             alt="news3" />
                     </Col>
                 </Row> */}
-                {/* <div className={styles.newsbox}>
+                <div className={styles.newsbox}>
                                         <img
                             className={styles.news}
                             src="/images/news-1.png"
@@ -60,37 +60,13 @@ export default function HomePageContent({ title }) {
                             className={styles.news}
                             src="/images/news-3.png"
                             alt="news3" />
-                            </div> */}
+                            </div>
                 <Row gutter={[32, 32]}
                     style={{ width: "100%", margin: "auto", paddingBottom: "2.5rem" }} justify="space-between" align="middle"
                 >
                     <Col
                         justify="space-between" align="middle"
                     >
-
-                        <Carousel 
-                        afterChange={onChange}
-                        className={styles.carousel}
-                        >
-                            <div>
-                            <img
-                            className={styles.news}
-                            src="/images/news-1.png"
-                            alt="news1" />
-                            </div>
-                            <div>
-                            <img
-                            className={styles.news}
-                            src="/images/news-2.png"
-                            alt="news2" />
-                            </div>
-                            <div>
-                            <img
-                            className={styles.news}
-                            src="/images/news-3.png"
-                            alt="news3" />
-                            </div>
-                        </Carousel>
 
                     </Col>
                 </Row>

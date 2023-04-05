@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </HelmetProvider>
-    </Provider>
+     </Provider>
     
   )
 }

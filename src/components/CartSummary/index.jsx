@@ -16,10 +16,10 @@ export default function CartSummary() {
 
   return (
     <nav onClick={toggleModal} className={styles.cartSummary} >
-      <Badge count={count} color="#6366F2" style={{color: 'white'}}>
+      <Badge count={count} color="#F9CBB7" style={{color: '#4D6447'}}>
         <CartIcon size={32} color={colorTextBase} />
       </Badge>
-      <p className={styles.cartText}> Shopping bag </p>
+      {/* <p className={styles.cartText}> Shopping bag </p> */}
     </nav>
   );
 }
