@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
 
 import styles from "./basketmodal.module.css"
-import { CartIcon } from "./icons";
+import { CartIcon } from "../CartSummary/Icons";
 import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
