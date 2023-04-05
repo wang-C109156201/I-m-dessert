@@ -78,3 +78,18 @@
     opacity: 1;
   }
 }
+
+.icon {
+  display: inline-block;
+  position: absolute !important;
+  top: 2.2rem;
+  right:9rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .icon {
+     right: 5rem;
+  }
+}

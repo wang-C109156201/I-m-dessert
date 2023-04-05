@@ -23,7 +23,7 @@ export default function HomePageContent({ title }) {
             <h2 className={styles.text}>最新消息</h2>
 
             <div className="container">
-                <Col align="middle">
+                {/* <Col align="middle"> */}
                 
                 {/* <Row justify="space-between" align="middle">
                     <Col
@@ -45,7 +45,7 @@ export default function HomePageContent({ title }) {
                             alt="news3" />
                     </Col>
                 </Row> */}
-                <div className={styles.newsbox}>
+                {/* <div className={styles.newsbox}>
                                         <img
                             className={styles.news}
                             src="/images/news-1.png"
@@ -70,7 +70,7 @@ export default function HomePageContent({ title }) {
 
                     </Col>
                 </Row>
-                </Col>
+                </Col> */}
             </div>
             <h2 className={styles.text}>{title}</h2>
         </div>
