@@ -73,7 +73,11 @@
   }
 }
 
-
+@media (max-width: 768px) {
+  .icon {
+     display: none;
+  }
+}
 
 
 @media (min-width: 768px) {
@@ -95,5 +99,6 @@
     width: 30px;
     height: 45px;
   } */
+
 }
 
