@@ -23,54 +23,63 @@ export default function HomePageContent({ title }) {
             <h2 className={styles.text}>最新消息</h2>
 
             <div className="container">
-                {/* <Col align="middle"> */}
-                
-                {/* <Row justify="space-between" align="middle">
+
+
+                <Row justify="space-between" align="middle">
                     <Col
                         justify="space-between" align="middle"
                     >
-                        <img
-                            className={styles.news}
-                            src="/images/news-1.png"
-                            alt="news1" />
+                        <div className={styles.newsbox}>
+                            <img
+                                className={styles.ns}
+                                src="/images/news-1.png"
+                                alt="news1" />
 
-                        <img
-                            className={styles.news}
-                            src="/images/news-2.png"
-                            alt="news2" />
+                            <img
+                                className={styles.ns}
+                                src="/images/news-2.png"
+                                alt="news2" />
 
-                        <img
-                            className={styles.news}
-                            src="/images/news-3.png"
-                            alt="news3" />
+                            <img
+                                className={styles.ns}
+                                src="/images/news-3.png"
+                                alt="news3" />
+                        </div>
                     </Col>
-                </Row> */}
-                {/* <div className={styles.newsbox}>
-                                        <img
-                            className={styles.news}
-                            src="/images/news-1.png"
-                            alt="news1" />
+                </Row>
 
-                        <img
-                            className={styles.news}
-                            src="/images/news-2.png"
-                            alt="news2" />
-
-                        <img
-                            className={styles.news}
-                            src="/images/news-3.png"
-                            alt="news3" />
-                            </div>
                 <Row gutter={[32, 32]}
-                    style={{ width: "100%", margin: "auto", paddingBottom: "2.5rem" }} justify="space-between" align="middle"
+                    className={styles.cl}justify="center" align="middle"
                 >
-                    <Col
-                        justify="space-between" align="middle"
+                    <Col xs={{ span: 20 }}
+                        justify="center" align="middle"
                     >
+                        <Carousel afterChange={onChange}>
+                            <div>
+                            <img
+                                className={styles.news}
+                                src="/images/news-1.png"
+                                alt="news1" />  
+                                <p>s</p> 
+                            </div>
+                            <div>
+                            <img
+                                className={styles.news}
+                                src="/images/news-2.png"
+                                alt="news2" />
+                                <p>s</p> 
+                            </div>
+                            <div>
+                            <img
+                                className={styles.news}
+                                src="/images/news-3.png"
+                                alt="news3" />
+                                <p>s</p> 
+                            </div>
+                        </Carousel>
 
                     </Col>
                 </Row>
-                </Col> */}
             </div>
             <h2 className={styles.text}>{title}</h2>
         </div>

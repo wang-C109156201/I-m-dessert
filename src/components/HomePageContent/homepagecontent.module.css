@@ -33,6 +33,8 @@
     margin-top: 50px;
     font-weight: bold;
     letter-spacing: 7px;
+    /* margin-bottom: 3rem; */
+    /* z-index: 10000; */
 }
 
 .contentStyle {
@@ -49,8 +51,20 @@
 }
 
 .news {
-    width: 30%;
+    width: 70%;
+    /* display: none !important; */
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem; */
+}
 
+.ns {
+    width: 25%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     /* margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 2rem;
@@ -64,6 +78,13 @@
     align-items: center;
     flex-direction: row;
 }
+.cl {
+
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 2.5rem;
+}
 
 
 
@@ -75,7 +96,16 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width:769px) {
+
+    .news {
+        display: none !important;
+    }
+    .cl {
+        display: none!important;
+
+    }
+
 
 }
 
@@ -85,16 +115,31 @@
     }
 
     .imgDispalyInMobile {
-        height: 63%;
+        /* height: 63%; */
+        /*這個我先暫時註解*/
         /*要修圖片*/
         width: 100%;
     }
+
     /* .carousel {
         display: none!important;
     } */
-    .news {
+    /* .news {
         width: 70%;
+    } */
+
+    .newsbox {
+        display: none;
     }
+
+    .cl {
+
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0 !important;
+        padding-bottom: 2.5rem;
+    }
+
 
 }
 
@@ -102,9 +147,10 @@
     .imgDispalyInDesktop {
         display: none;
     }
-    .news {
+
+    /* .news {
         width: 85%;
-    
-    }
+
+    } */
 
 }

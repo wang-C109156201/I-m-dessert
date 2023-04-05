@@ -8,10 +8,11 @@ export default function AddToCart({ product, qty }) {
 
   const openNotification = () => {
     notification.open({
-      message: '加入購物車通知',
+      message: '已加入購物車',
       description:
         `${qty}件${product.name} 已加入購物車.`,
-      placement: 'bottomRight'
+      placement: 'bottomRight',
+      icon:(<img src="/shortcut icon.png" alt="logo" />)
     });
   };
 
