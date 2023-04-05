@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProductList from "../components/ProductList";
 import products from "../json/products.json";
-import Logo from '../components/logo';
+import Logo from "../components/Logo";
 import { Select } from "antd";
 
 
@@ -13,7 +13,7 @@ function Category() {
   return (
     
     <div className="maincontainer mainLayout">
-      <Helmet><title>全部商品</title></Helmet>
+      <Helmet><title>全部商品ㄌ拉拉拉拉拉拉拉</title></Helmet>
       <Header
         className="layoutHeader"
         slogan="An example made by Vite."
