@@ -5,8 +5,8 @@
  }
  .box {
    width: 100%;
-   /* margin-top: 1rem;
-   margin-bottom: 1rem; */
+   justify-content:space-between;
+   align-content:middle;
  }
 .footer {
    display: flex;
@@ -21,6 +21,9 @@
 
 }
 
+.text{
+   color: #FFFCFB;
+}
  
 @media (max-width: 990px) {
    .footer {
@@ -142,6 +145,7 @@ margin-left: 20px;
    font-family: SweiGothicCJKtc-Regular;
    margin-top: 50px;
    letter-spacing: 0.2em;
+   color: #FFFCFB;
 }
 
 .copyRight {

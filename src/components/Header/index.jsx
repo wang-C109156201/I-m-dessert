@@ -9,7 +9,7 @@ import { Icon } from "./Icons";
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
     return (
-        <div className="container">
+        <div >
             <div className={styles.header}>
              <NavLink to="/">
                 <img className={styles.logo} src="/images/icon_logo.png" alt="logo" />
@@ -30,4 +30,3 @@ export default function Header() {
 
     );
 }
-

@@ -7,16 +7,16 @@ export default function Footer() {
             <hr className={styles.hrFooterLine} />
             <footer className={styles.footer}>
                 <div className="container">
-                    <Row className={styles.box} justify="space-between" align="middle" >
+                    <Row className={styles.box}>
                         <Col span={24} lg={{ span: 15 }}>
                             <div className={styles.content}>
                                 <img className={styles.img} src="/images/icon_logo.png" alt="logo" />
-                                <p className={styles.text}>
+                                <div className={styles.text}>
                                     <p className={styles.title}>關於我們</p>
                                     電話：02-23027963<br />
                                     E-MAIL：iavd@gmail.com<br />
                                     地址：台北市大安區和平東路二段134號
-                                </p>
+                                </div>
 
                             </div>
 
