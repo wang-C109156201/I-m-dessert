@@ -10,7 +10,7 @@ export default function AddToCart({ product, qty }) {
     notification.open({
       message: '加入購物車通知',
       description:
-        `${qty}  件 ${product.name}  已加入購物車.`,
+        `${qty} 件 ${product.name} 已加入購物車.`,
       placement: 'bottomRight'
     });
   };
