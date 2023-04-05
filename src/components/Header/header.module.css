@@ -1,10 +1,10 @@
 .header {
   width: 100%;
-  display: flex; 
   background-color: #4D6447 !important;
   border-bottom: 0.5px solid #fffcfb5a ;
   display: flex;
   flex-direction: row;
+  align-self: center;
   justify-content: center;
   position: fixed; 
   margin-bottom: 10px;

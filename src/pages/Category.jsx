@@ -13,7 +13,7 @@ function Category() {
   return (
     
     <div className="maincontainer mainLayout">
-      <Helmet><title>全部商品ㄌ拉拉拉拉拉拉拉</title></Helmet>
+      <Helmet><title>全部商品</title></Helmet>
       <Header
         className="layoutHeader"
         slogan="An example made by Vite."

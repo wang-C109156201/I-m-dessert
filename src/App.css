@@ -14,9 +14,8 @@
 /* RWD Container */
 .container {
     width: 100%;
-    display: flex;
-    align-self: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-family: SweiGothicCJKtc-Regular;
 }
 @media (min-width: 425px) {
@@ -61,7 +60,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: #FFFCFB;
-  color: rgb(255, 255, 255);
+  
 }
 
 
@@ -97,7 +96,6 @@ body {
 
 .layoutContent {
   grid-area: content;
-  background-color: #111828;
 }
 
 
