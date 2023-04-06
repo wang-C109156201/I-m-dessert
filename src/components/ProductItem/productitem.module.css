@@ -212,5 +212,15 @@
    .text {
       font-size: 15px;
    }
+   .img{
+      position: relative;
+      width: 100%;
+      height: auto;
+      display: block;
+      /* background-color: aqua; */
+      margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+   }
 }
 

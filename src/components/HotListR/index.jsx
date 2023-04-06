@@ -10,8 +10,8 @@ export default function HotListR() {
    }, []);
    return (
       <div className="container">
-         <Col  align="middle">
-            <div >
+         <Col className={styles.col} >
+            <div className={styles.Row}>
                <div className={styles.item}>
                   <div className={styles.info}>
                      <h3 className={styles.category}>
@@ -30,10 +30,10 @@ export default function HotListR() {
                         </span> */}
                      </div>
                   </div>
-                  <div data-aos="fade-up-left" className={styles.img}>
+                  <div data-aos="fade-left" className={styles.img}>
                      <a href="">
                         <img
-                           style={{ width: '100%', }}
+                           className={styles.img_width}
                            src="/images/一禾堂-1.png"
                            alt="一禾堂" />
                         <div className={styles.overlay}>

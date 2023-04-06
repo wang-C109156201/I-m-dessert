@@ -44,8 +44,8 @@ export default function NavBar({ open, onClose }) {
                 <div className={styles.drawer}>
                     <NavBarContent />
                     <NavLink to="/"
-                    className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                        偶素會員
+                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+                            偶素會員
                     </NavLink>
                 </div>
             </Drawer>

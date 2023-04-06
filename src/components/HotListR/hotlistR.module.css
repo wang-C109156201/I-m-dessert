@@ -11,7 +11,18 @@
    align-content: center;
    justify-content: center;
    flex-direction:row;
-   width: 100%;
+   width: 90%;
+}
+
+.col{
+   align-content:center;
+   justify-content: center;
+}
+
+.Row{
+   display: flex;
+   align-content:center;
+   justify-content: center;
 }
 
 .img{
@@ -24,6 +35,10 @@
    margin-left: 1rem;
    margin-top: 2.5rem;
    margin-bottom: 2.5rem;
+}
+
+.img_width{
+   width: 100%;
 }
 
 .img:hover .overlay {
@@ -136,10 +151,10 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*<768px*/
    .info {
-      padding: 0.1rem;
-      margin-right: 0.1rem;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
    }
    .category {
       margin-bottom: 0.1rem;

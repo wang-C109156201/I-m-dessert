@@ -11,15 +11,16 @@ export default function HotList() {
    }, []);
    return (
       <div className="container">
-         <Col  align="middle">
-            <div>
+         <Col  className={styles.col}>
+            <div className={styles.Row}>
                <div className={styles.item}>
-                  <div  data-aos="fade-up-right" className={styles.img}>
+                  <div data-aos="fade-right" className={styles.img}>
                      <a href="">
                         <img
-                           style={{ width: '100%' }}
+                           className={styles.img_width}
                            src="/images/綠帶純植物烘培-1.png"
                            alt="綠帶純植物烘培" />
+                           
                         <div className={styles.overlay}>
                            <div className={styles.text}>綠帶純植物烘培</div>
                         </div>
@@ -37,10 +38,6 @@ export default function HotList() {
                         栗子腰果乃油加上南瓜基底的海綿旦糕， 內餡有著滿滿的有機甘栗丁，再妝點一個完整的法式糖漬栗子與可食用金箔，專屬於栗子控的享受！
                      </p>
                      <div className={styles.more}>
-                        {/* <span
-                           className={styles.textGray}>
-                           NT${product.price}
-                        </span> */}
                      </div>
                   </div>
                </div>
@@ -48,12 +45,12 @@ export default function HotList() {
 
             <HotListR />
 
-            <div>
+            <div className={styles.Row}>
                <div  className={styles.item}>
-                  <div data-aos="fade-up-right" className={styles.img}>
+                  <div data-aos="fade-right" className={styles.img}>
                      <a href="">
                         <img
-                           style={{ width: '100%' }}
+                           className={styles.img_width}
                            src="/images/嬉皮烘培-1.png"
                            alt="嬉皮烘培" />
                         <div className={styles.overlay}>
@@ -73,10 +70,6 @@ export default function HotList() {
                         選用臺灣百年茶店--鐵觀音茶葉細細磨粉，製成滿滿香氣糕體，層層抹上鐵觀音奶餡，今年夏天，送給爸爸最棒的茶味蛋糕
                      </p>
                      <div className={styles.more}>
-                        {/* <span
-                           className={styles.textGray}>
-                           NT${product.price}
-                        </span> */}
                      </div>
                   </div>
                </div>
