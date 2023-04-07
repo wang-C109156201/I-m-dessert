@@ -1,15 +1,26 @@
 import styles from './logo.module.css';
+import { Row, Col } from "antd";
+import { NavLink } from 'react-router-dom';
 
 export default function Logo() {
 
   return (
     <div className={styles.container}>
-        <div className={styles.logo}>
-            <img src="/images/icon_品牌logo1.png" alt="icon-1" className={styles.logo_img} />
-            <img src="/images/icon_品牌logo2.png" alt="icon-2"  className={styles.logo_img} />
-            <img src="/images/icon_品牌logo3.png" alt="icon-3"  className={styles.logo_img} />
-        </div>
-        
+      <Col align="middle" justify="center">
+        <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
+          <div className={styles.logo}>
+            <NavLink to="/">
+              <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
+            </NavLink>
+            <NavLink to="/">
+              <img src="/images/logolink-2.png" alt="icon-2" className={styles.logo_img} />
+            </NavLink>
+            <NavLink to="/">
+              <img src="/images/logolink-3.png" alt="icon-3" className={styles.logo_img} />
+            </NavLink>
+          </div>
+        </Row>
+      </Col>
     </div>
   );
 }

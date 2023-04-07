@@ -11,6 +11,7 @@ export default function Header() {
     return (
         <div >
             <div className={styles.header}>
+            {/* <div className="container"> */}
              <NavLink to="/">
                 <img className={styles.logo} src="/images/icon_logo.png" alt="logo" />
             </NavLink>
@@ -23,6 +24,7 @@ export default function Header() {
             <nav className={styles.icon} >
                 <Icon className={styles.icon} size={32} />
             </nav>
+            {/* </div> */}
         </div>
 
         </div>
