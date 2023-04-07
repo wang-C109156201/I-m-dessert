@@ -30,14 +30,14 @@
 
 .info {
    padding: 0 1.2rem;
-   color: #323721;
+   /* color: #323721; */
 }
 
 .category {
    font-size: 0.5rem;
    margin-bottom: 0.2rem;
    font-family: SweiGothicCJKtc-Regular;
-   color: #323721;
+   /* color: #323721; */
 
 }
 
@@ -46,7 +46,7 @@
    font-size: 1.5rem;
    font-weight: bold;
    font-family: SweiGothicCJKtc-Regular;
-   color: #323721;
+   /* color: #323721; */
    border-bottom: #F9CBB7 solid 1px;
    padding-bottom: 0.5rem;
    width: 100%;
@@ -58,7 +58,7 @@
    margin-bottom: 1rem;
    /* text-indent: 2rem; */
    text-align: justify;
-   color: #323721;
+   /* color: #323721; */
 }
 
 .wrap {
@@ -69,14 +69,14 @@
 .text {
    font-size: 0.5rem;
    margin-bottom: 0;
-   color: #323721;
+   /* color: #323721; */
 }
 
 .price {
    font-size: 1.2rem;
    font-weight: bold;
    font-family: SweiGothicCJKtc-Regular;
-   color: #323721;
+   /* color: #323721; */
    margin-bottom: 0.5rem;
 }
 
@@ -119,7 +119,7 @@
    font-size: 1.5rem;
    font-weight: bold;
    font-family: SweiGothicCJKtc-Regular;
-   color: #323721;
+   /* color: #323721; */
    width: 100%;
    text-align: center;
    margin-top: 3rem;
@@ -130,7 +130,7 @@
    margin-bottom: 1rem;
    font-size: 1.5rem;
    font-family: SweiGothicCJKtc-Regular;
-   color: #323721;
+   /* color: #323721; */
    border-left: #F9CBB7 solid;
    border-left-width: 10px;
    padding-left: 1rem;
@@ -146,7 +146,7 @@
    /* text-indent: 2rem; */
    line-height: 2;
    text-align: justify;
-   color: #323721;
+   /* color: #323721; */
 }
 
 

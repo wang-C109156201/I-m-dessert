@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  color: #F9CBB7;
+  /* color: #F9CBB7; */
   /* font-family: SweiGothicCJKtc-Regular; */
 }
 @media (max-width: 768px) {
@@ -60,12 +60,10 @@
   .drawer {
     display: flex;
   }
-  .Drawerbody{
-    background: #000;
-  }
+
 
   .navItem {
-    color: #4D6447;
+    color: #96AB90;
     /* font-size: 1rem;
     margin-bottom: 0;
     margin-left: 0; */
@@ -74,7 +72,7 @@
     font-family: SweiGothicCJKtc-Regular;
   }
   .navItem:hover {
-    color: #4D6447;
+    /* color: #4D6447; */
     opacity: 1;
   }
 }

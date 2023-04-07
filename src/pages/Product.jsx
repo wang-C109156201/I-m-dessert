@@ -5,8 +5,14 @@ import ProductList from "../components/ProductList";
 import ProductDetail from "../components/ProductDetail";
 import products from "../json/products.json";
 import HotList from "../components/HotList";
+import { theme } from 'antd';
+import { Helmet } from "react-helmet-async"
 
 function Product() {
+  const {
+    token: { colorBgBase, colorTextBase },
+  } = theme.useToken();
+
   const { productId } = useParams();
   const product = products.find(
      (x) => x.id === productId
@@ -14,6 +20,15 @@ function Product() {
 
   return (
     <div className="maincontainer mainLayout">
+      <Helmet>
+            <title>product</title>
+            <style>{`
+               body { 
+                  background-color: ${colorBgBase}; 
+                  color: ${colorTextBase}
+               }
+            `}</style>
+         </Helmet>
       <Header
         className="layoutHeader"
         slogan="An example made by Vite."

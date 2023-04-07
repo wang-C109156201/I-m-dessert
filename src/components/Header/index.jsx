@@ -5,7 +5,7 @@ import HamburgerMenu from "../HamburgerMenu"
 import NavBar from "../NavBar";
 import CartSummary from "../CartSummary";
 import { Icon } from "./Icons";
-
+import SetColorMode from "../SetColorMode"
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
     return (
@@ -23,6 +23,9 @@ export default function Header() {
             <CartSummary />
             <nav className={styles.icon} >
                 <Icon className={styles.icon} size={32} />
+            </nav>
+            <nav className={styles.coloricon} >
+                <SetColorMode className={styles.coloricon} size={32} />
             </nav>
             {/* </div> */}
         </div>

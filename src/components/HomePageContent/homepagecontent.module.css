@@ -21,7 +21,7 @@
 .div {
     width: 300px;
     height: 300px;
-    background: #000;
+    /* background: #000; */
     margin: auto;
     padding: auto;
     margin-top: 100px;
@@ -36,7 +36,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    color: #4D6447;
+    /* color: #4D6447; */
     margin-top: 50px;
     font-weight: bold;
     letter-spacing: 7px;
@@ -45,7 +45,7 @@
 }
 
 .text{
-    color: #000;
+    /* color: #000; */
     font-weight: bold;
     margin: 0;
 }
@@ -125,10 +125,10 @@
 
 .contentStyle {
     height: 160px;
-    color: #fff;
+    /* color: #fff; */
     line-height: 160px;
     text-align: center;
-    background: #364d79;
+    /* background: #364d79; */
 }
 
 .Carousel {

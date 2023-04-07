@@ -4,7 +4,7 @@
    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
  }
 .item {
-   background-color: #FFFCFB;
+   /* background-color: #FFFCFB; */
    border-radius: 1%;
    padding: 0;
    display: flex; 
@@ -62,7 +62,7 @@
 
  .text {
    white-space: nowrap; 
-   color: white;
+   color: #FFFCFB;
    font-size: 20px;
    position: absolute;
    overflow: hidden;
@@ -86,7 +86,7 @@
 .category {
    display: flex;
    flex-direction:left;
-   color: #323721;
+   /* color: #323721; */
    opacity: 1; /*透明度*/
    margin-bottom: 0.2rem;
    font-family: SweiGothicCJKtc-Regular;
@@ -95,7 +95,7 @@
 .name {
    display: flex;
    flex-direction:left;
-   color: #323721;
+   /* color: #323721; */
    margin-bottom: 0.5rem;
    font-weight:bold;
    font-family: SweiGothicCJKtc-Regular;
@@ -104,7 +104,7 @@
 .description {
    display: flex;
    text-align:left;
-   color: #323721;
+   /* color: #323721; */
    opacity: 1;
    margin-bottom: 1rem;
    font-family: SweiGothicCJKtc-Regular;
@@ -113,7 +113,7 @@
 .textGray {
    display: flex;
    flex-direction:left;
-   color: #323721;
+   /* color: #323721; */
    opacity: 1;
 }
 

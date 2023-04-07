@@ -39,7 +39,6 @@ export default function NavBar({ open, onClose }) {
                 placement="right"
                 onClose={onClose}
                 open={open}
-            // bodyStyle={styles.Drawerbody}
             >
                 <div className={styles.drawer}>
                     <NavBarContent />

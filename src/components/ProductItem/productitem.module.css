@@ -4,7 +4,7 @@
    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
  }
 .item {
-   background-color: #FFFCFB;
+   /* background-color: #FFFCFB; */
    border-radius: 1%;
    padding: 0;
    display: flex; 
@@ -79,7 +79,7 @@
    display: flex;
    align-content: center;
    justify-content: center;
-   color: #323721;
+   /* color: #323721; */
    margin-bottom: 0.1rem;
    font-size: medium;
    font-family: SweiGothicCJKtc-Regular;
@@ -98,7 +98,7 @@
    display: flex;
    align-content: center;
    justify-content: center;
-   color: #323721;
+   /* color: #323721; */
    opacity: 1;
    font-weight:bold;
 }
