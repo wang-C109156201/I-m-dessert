@@ -18,7 +18,7 @@ function Store() {
     const _greenbakery = !sort
     ? greenbakery
     :greenbakery.filter(
-        x => x?.green.toUpperCase() === sort.toUpperCase()
+        x => x?.sort.toUpperCase() === sort.toUpperCase()
     );
     // const title = _.startCase(categoryName);
 
