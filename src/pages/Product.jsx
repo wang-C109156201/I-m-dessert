@@ -18,6 +18,7 @@ function Product() {
      (x) => x.id === productId
   );
 
+  
   return (
     <div className="maincontainer mainLayout">
       <Helmet>
@@ -34,6 +35,7 @@ function Product() {
         slogan="An example made by Vite."
       />
       {/* <h1 style={{color:"#000" ,margin:"100px"}}>這是購物車頁</h1> */}
+
       {/* <ProductList products={products} className="layoutContent" /> */}
       <ProductDetail product={product} className="layoutContent" />
       <Footer className="layoutFooter" />

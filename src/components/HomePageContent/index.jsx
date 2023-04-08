@@ -9,7 +9,7 @@ const carouselEL = React.createRef()
 export default function HomePageContent({ title }) {
     const [active, setActive] = useState(false);
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
     // const contentStyle = {
     //     margin: 0,

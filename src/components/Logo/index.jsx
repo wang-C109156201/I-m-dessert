@@ -6,10 +6,10 @@ export default function Logo() {
 
   return (
     <div className={styles.container}>
-      <Col align="middle" justify="center">
+      <Col  align="middle" justify="center">
         <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
           <div className={styles.logo}>
-            <NavLink to="/">
+            <NavLink to="/store/green">
               <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
             </NavLink>
             <NavLink to="/">

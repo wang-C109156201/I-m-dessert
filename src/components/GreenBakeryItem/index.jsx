@@ -1,32 +1,31 @@
 import React,{useEffect} from "react";
-import styles from './productitem.module.css';
+import styles from './greenbakeryitem.module.css';
 import { Link } from 'react-router-dom';
-// import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function ProductItem({ product }) {
+export default function GreenBakeryItem({ greenbakery}) {
    
    return (
        
       <div>         
          <div className={styles.item}>
             <div className={styles.img}>
-               <Link to={`/products/id/${product.id}`}>
+               <Link to={`/products/id/${greenbakery.id}`}>
                   <img
                      style={{ width: '100%'}}
-                     src={product.image}
-                     alt={product.name} />
+                     src={greenbakery.image}
+                     alt={greenbakery.name} />
                   <div className={styles.overlay}>
-                     <div className={styles.text}>{product.category}</div>
+                     <div className={styles.text}>{greenbakery.category}</div>
                   </div> 
-               </Link>  
+               </Link> 
             </div>
             <h2 className={styles.name}>
-               {product.name}
+               {greenbakery.name}
             </h2>
             <div
                className={styles.textGray}>
-               NT${product.price}
+               NT${greenbakery.price}
             </div>
            
          </div>

@@ -2,6 +2,7 @@
     {
         "id": "g1",
         "category": "綠帶純植物烘焙",
+        "sort":"旦糕",
         "name": "栗子蒙布朗旦糕",
         "price": 980,
         "image": "/images/綠帶/cake-1.png",
@@ -18,6 +19,7 @@
     {
         "id": "g2",
         "category": "綠帶純植物烘焙",
+        "sort":"旦糕",
         "name": "栗子愛觀音旦糕",
         "price": 1280,
         "image": "/images/綠帶/cake-3.png",
@@ -33,6 +35,7 @@
     {
         "id": "g3",
         "category": "綠帶純植物烘焙",
+        "sort":"旦糕",
         "name": "抹茶提拉米蘇",
         "price": 780,
         "image": "/images/綠帶/cake-4.png",
@@ -48,6 +51,7 @@
     {
         "id": "g4",
         "category": "綠帶純植物烘焙",
+        "sort":"餅乾",
         "name": "檸檬夏雪奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-5.png",
@@ -63,6 +67,7 @@
     {
         "id": "g5",
         "category": "綠帶純植物烘焙",
+        "sort":"餅乾",
         "name": "芭蕾圓舞曲奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-2.png",
@@ -78,6 +83,7 @@
     {
         "id": "g6",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "梅子雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-1.png",
@@ -93,6 +99,7 @@
     {
         "id": "g7",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "花椒巧克力雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-2.png",
@@ -108,6 +115,7 @@
     {
         "id": "g8",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "抹茶綠藻雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-3.png",
@@ -123,6 +131,7 @@
     {
         "id": "g9",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "微笑原味雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-4.png",
@@ -138,6 +147,7 @@
     {
         "id": "g10",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "蔓越莓司康抹醬組",
         "price": 490,
         "image": "/images/綠帶/scone-1.png",
@@ -153,6 +163,7 @@
     {
         "id": "g11",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "薰衣草司康抹醬組",
         "price": 490,
         "image": "/images/綠帶/scone-2.png",
@@ -168,6 +179,7 @@
     {
         "id": "g12",
         "category": "綠帶純植物烘焙",
+        "sort":"麵包",
         "name": "原味司康抹醬組",
         "price": 460,
         "image": "/images/綠帶/scone-3.png",
