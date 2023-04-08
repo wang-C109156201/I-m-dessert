@@ -22,7 +22,7 @@ function Product() {
   return (
     <div className="maincontainer mainLayout">
       <Helmet>
-            <title>product</title>
+            <title>偶素商品</title>
             <style>{`
                body { 
                   background-color: ${colorBgBase}; 
