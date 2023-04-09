@@ -12,10 +12,10 @@ export default function Logo() {
             <NavLink to="/store/store">
               <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
             </NavLink>
-            <NavLink to="/store3/yiihotang/all">
+            <NavLink to="/store3/yiihotang">
               <img src="/images/logolink-2.png" alt="icon-2" className={styles.logo_img} />
             </NavLink>
-            <NavLink to="/store2/hippun/all">
+            <NavLink to="/store2/hippun">
               <img src="/images/logolink-3.png" alt="icon-3" className={styles.logo_img} />
             </NavLink>
           </div>

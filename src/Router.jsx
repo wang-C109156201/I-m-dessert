@@ -30,12 +30,12 @@ function Router() {
               <Route path="store1/:sort" element={<Store />} />
             </Route>
             <Route path="store2">
-              {/* <Route path="hippun" element={< Store/>} /> */}
-              <Route path="hippun/:sort" element={< Store2/>} />
+              <Route path="hippun" element={< Store2/>} />
+              <Route path="hippun2/:sort" element={< Store2/>} />
             </Route>
             <Route path="store3">
-              {/* <Route path="yiihotang" element={< Store/>} /> */}
-              <Route path="yiihotang/:sort" element={< Store3/>} />
+              <Route path="yiihotang" element={< Store3/>} />
+              <Route path="yiihotang3/:sort" element={< Store3/>} />
             </Route>
           </Routes>
         </BrowserRouter>

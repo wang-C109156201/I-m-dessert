@@ -6,19 +6,19 @@ import { NavLink } from 'react-router-dom';
 export default function StoreContent3() {
     const NavBarContent = () => (
         <>
-            <NavLink to="/store3/yiihotang/all"
+            <NavLink to="/store3/yiihotang"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 全部
             </NavLink>
-            <NavLink to="/store3/yiihotang/bread"
+            <NavLink to="/store3/yiihotang3/bread"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                麵包
             </NavLink>
-            <NavLink to="/store3/yiihotang/cake"
+            <NavLink to="/store3/yiihotang3/cake"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 蛋糕
             </NavLink>
-            <NavLink to="/store3/yiihotang/cookie"
+            <NavLink to="/store3/yiihotang3/cookie"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 餅乾
             </NavLink>
@@ -31,7 +31,7 @@ export default function StoreContent3() {
                 <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
                     <div className={styles.content} >
                         <div className={styles.logo}>
-                            <NavLink to="/store3/yiihotang/all">
+                            <NavLink to="/store3/yiihotang">
                                 <img src="/images/logolink-2.png" alt="icon-1" className={styles.logo_img} />
                             </NavLink>
                         </div>
