@@ -1,3 +1,7 @@
+import styles from './storecontent.module.css';
+import { Row, Col } from "antd";
+import { NavLink } from 'react-router-dom';
+
 export default function StoreContent() {
     const NavBarContent = () => (
         <>
@@ -5,15 +9,15 @@ export default function StoreContent() {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 全部
             </NavLink>
-            <NavLink to="/store/store1/餅乾"
+            <NavLink to="/store/store1/cookie"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 餅乾
             </NavLink>
-            <NavLink to="/store/store1/旦糕"
+            <NavLink to="/store/store1/cake"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 蛋糕
             </NavLink>
-            <NavLink to="/store/store1/麵包"
+            <NavLink to="/store/store1/bread"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 麵包
             </NavLink>

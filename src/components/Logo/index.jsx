@@ -8,8 +8,8 @@ export default function Logo() {
     <div className={styles.container}>
       <Col  align="middle" justify="center">
         <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
-          <div className={styles.logo}>
-            <NavLink to="/store/green/all">
+          <div className={styles.logo}>       
+            <NavLink to="/store/store">
               <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
             </NavLink>
             <NavLink to="/store3/yiihotang/all">
