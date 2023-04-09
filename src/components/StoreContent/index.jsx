@@ -10,15 +10,15 @@ export default function StoreContent() {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 全部
             </NavLink>
-            <NavLink to="/store/green/餅乾"
+            <NavLink to="/store/green/cookie"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 餅乾
             </NavLink>
-            <NavLink to="/store/green/旦糕"
+            <NavLink to="/store/green/cake"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 蛋糕
             </NavLink>
-            <NavLink to="/store/green/麵包"
+            <NavLink to="/store/green/bread"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 麵包
             </NavLink>

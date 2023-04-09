@@ -7,7 +7,7 @@ import greenbakery from "../json/greenbakery.json";
 import StoreContent from '../components/StoreContent';
 import MySelect from '../components/MySelect';
 import { theme } from 'antd';
-// import _ from 'lodash';
+import _ from 'lodash';
 
 function Store() {
     const {
@@ -16,10 +16,10 @@ function Store() {
 
     const { sort } = useParams();
     const _greenbakery = !sort
-    ? greenbakery
-    :greenbakery.filter(
-        x => x?.green.toUpperCase() === sort.toUpperCase()
-    );
+        ? greenbakery
+        :greenbakery.filter(
+            x => x?.sort.toUpperCase() === sort.toUpperCase()
+        );
     // const title = _.startCase(categoryName);
 
   return (
