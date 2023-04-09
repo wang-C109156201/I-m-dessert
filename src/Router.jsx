@@ -24,7 +24,7 @@ function Router() {
               <Route path="id/:productId" element={<Product />} />
             </Route>
             <Route path="store">
-              <Route path="green" element={< Store/>} />
+              {/* <Route path="green" element={< Store/>} /> */}
               <Route path="green/:sort" element={< Store/>} />
             </Route>
           </Routes>

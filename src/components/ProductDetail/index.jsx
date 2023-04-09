@@ -147,7 +147,7 @@ function ProductDetail({ product }) {
                            </Select>
                         </div>
                         <p className={styles.qty}>
-                           目前金額： {product.price * qty}&nbsp;/&nbsp;{product.price * qty > 1000 ? "達到免運門檻囉" : "未達到免運"}
+                           目前金額： {product.price * qty}$&nbsp;/&nbsp;{product.price * qty > 1000 ? "達到免運門檻囉" : "未達到免運，還差"+(1000-product.price * qty)+"$" }
                         </p>
                         <Row justify="space-between" align="middle">
                            <Button className={styles.btn}>
