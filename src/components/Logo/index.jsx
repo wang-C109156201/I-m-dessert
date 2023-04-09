@@ -9,13 +9,13 @@ export default function Logo() {
       <Col  align="middle" justify="center">
         <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
           <div className={styles.logo}>
-            <NavLink to="/store/green">
+            <NavLink to="/store/green/all">
               <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/store3/yiihotang/all">
               <img src="/images/logolink-2.png" alt="icon-2" className={styles.logo_img} />
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/store2/hippun/all">
               <img src="/images/logolink-3.png" alt="icon-3" className={styles.logo_img} />
             </NavLink>
           </div>

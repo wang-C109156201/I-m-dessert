@@ -67,10 +67,10 @@
 .navItem {
     font-size: larger;
     font-weight: bold;
-    padding-left: 2rem;
-    padding-right:2rem ;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right:1rem ;
     cursor: pointer;
     color: #96AB90;
     opacity: 1;
@@ -80,12 +80,7 @@
 .navItem:hover {
     color: #F9CBB7;
     opacity: 1;
-    padding-left: 2rem;
-    padding-right:2rem ;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    background-color: #f9cbb749;
-    border-radius: 5px;
+    font-size: 18px;
     /* text-shadow: 0px 0px 2px #F9CBB7; */
 }
 
@@ -94,7 +89,7 @@
     opacity: 1;
     padding-left: 2rem;
     padding-right:2rem ;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
     border-bottom: #F9CBB7 solid 0.2rem ;
 }
 
@@ -120,20 +115,12 @@
         margin-bottom: 0;
         margin-left: 0; */
         text-align: center;
-        opacity: 0.8;
+        opacity: 0.7;
         font-family: SweiGothicCJKtc-Regular;
     }
     .navItem:hover {
         /* color: #4D6447; */
         opacity: 1;
-    }
-    .navItemActive {
-        composes: navItem;
-        opacity: 1;
-        padding-left: 1rem;
-        padding-right:1rem ;
-        padding-bottom: 0.8rem;
-        border-bottom: #F9CBB7 solid 0.2rem ;
     }
 }
 

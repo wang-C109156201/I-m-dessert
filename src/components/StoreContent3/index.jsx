@@ -1,21 +1,26 @@
-export default function StoreContent() {
+import styles from './storecontent3.module.css';
+import { Row, Col } from "antd";
+import { NavLink } from 'react-router-dom';
+// import MySelect from '../MySelect';
+
+export default function StoreContent3() {
     const NavBarContent = () => (
         <>
-            <NavLink to="/store/store"
+            <NavLink to="/store3/yiihotang/all"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 全部
             </NavLink>
-            <NavLink to="/store/store1/餅乾"
+            <NavLink to="/store3/yiihotang/bread"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                餅乾
+               麵包
             </NavLink>
-            <NavLink to="/store/store1/旦糕"
+            <NavLink to="/store3/yiihotang/cake"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 蛋糕
             </NavLink>
-            <NavLink to="/store/store1/麵包"
+            <NavLink to="/store3/yiihotang/cookie"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                麵包
+                餅乾
             </NavLink>
         </>
     )
@@ -26,8 +31,8 @@ export default function StoreContent() {
                 <Row gutter={[24, 24]} align="middle" justify="center" className={styles.logobox}>
                     <div className={styles.content} >
                         <div className={styles.logo}>
-                            <NavLink to="/store/store">
-                                <img src="/images/logolink-1.png" alt="icon-1" className={styles.logo_img} />
+                            <NavLink to="/store3/yiihotang/all">
+                                <img src="/images/logolink-2.png" alt="icon-1" className={styles.logo_img} />
                             </NavLink>
                         </div>
                         <div className={styles.NavBar}>
