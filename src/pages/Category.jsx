@@ -7,6 +7,18 @@ import products from "../json/products.json";
 import Logo from "../components/Logo";
 import MySelect from "../components/MySelect";
 import { theme } from 'antd';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTopOnMount() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function Category() {
   const {
@@ -16,6 +28,7 @@ function Category() {
   return (
 
     <div className="maincontainer mainLayout">
+      <ScrollToTopOnMount/>
       <Helmet>
         <title>全部商品</title>
         <style>{`

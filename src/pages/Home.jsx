@@ -3,7 +3,18 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import HomePageContent from "../components/HomePageContent";
 import { theme } from 'antd';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
+function ScrollToTopOnMount() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function Home() {
   const {
@@ -12,6 +23,7 @@ function Home() {
 
   return (
     <div className="maincontainer mainLayout">
+      <ScrollToTopOnMount/>
       <Helmet>
         <title>偶素甜點</title>
         <style>{`

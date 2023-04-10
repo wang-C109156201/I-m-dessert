@@ -51,7 +51,7 @@
     {
         "id": "g4",
         "category": "綠帶純植物烘焙",
-        "sort":"cookie",
+        "sort":"cake",
         "name": "檸檬夏雪奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-5.png",
@@ -67,7 +67,7 @@
     {
         "id": "g5",
         "category": "綠帶純植物烘焙",
-        "sort":"cookie",
+        "sort":"cake",
         "name": "芭蕾圓舞曲奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-2.png",
@@ -83,7 +83,7 @@
     {
         "id": "g6",
         "category": "綠帶純植物烘焙",
-        "sort":"bread",
+        "sort":"cookie",
         "name": "梅子雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-1.png",
@@ -99,7 +99,7 @@
     {
         "id": "g7",
         "category": "綠帶純植物烘焙",
-        "sort":"bread",
+        "sort":"cookie",
         "name": "花椒巧克力雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-2.png",
@@ -115,7 +115,7 @@
     {
         "id": "g8",
         "category": "綠帶純植物烘焙",
-        "sort":"bread",
+        "sort":"cookie",
         "name": "抹茶綠藻雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-3.png",
@@ -131,7 +131,7 @@
     {
         "id": "g9",
         "category": "綠帶純植物烘焙",
-        "sort":"bread",
+        "sort":"cookie",
         "name": "微笑原味雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-4.png",

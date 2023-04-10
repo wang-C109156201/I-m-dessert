@@ -7,6 +7,18 @@ import products from "../json/products.json";
 import HotList from "../components/HotList";
 import { theme } from 'antd';
 import { Helmet } from "react-helmet-async"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTopOnMount() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function Product() {
   const {
@@ -21,6 +33,7 @@ function Product() {
   
   return (
     <div className="maincontainer mainLayout">
+      <ScrollToTopOnMount/>
       <Helmet>
             <title>偶素商品</title>
             <style>{`

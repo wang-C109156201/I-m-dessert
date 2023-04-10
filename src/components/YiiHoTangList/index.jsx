@@ -12,7 +12,8 @@ export default function YiiHoTangList({ yiihotang }) {
             key={yiihotang.id}
             sm={{ span: 12}}//2 screen ≥ 576px
             xs={{ span: 24 }}//1 screen < 576px
-            md={{ span: 6 }}//4 screen ≥ 768px
+            md={{ span: 8 }}//3 screen ≥ 768px
+            lg={{span:6}} //4 screen ≥ 992px
           >
             <YiiHoTangItem yiihotang={yiihotang} />
           </Col>

@@ -8,6 +8,18 @@ import StoreContent3 from '../components/StoreContent3';
 import MySelect from '../components/MySelect';
 import { theme } from 'antd';
 // import _ from 'lodash';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTopOnMount() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function Store3() {
     const {
@@ -25,6 +37,7 @@ function Store3() {
   return (
 
     <div className="maincontainer mainLayout">
+      <ScrollToTopOnMount/>
       <Helmet>
         <title>一禾堂</title>
         <style>{`

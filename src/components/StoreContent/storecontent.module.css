@@ -73,6 +73,7 @@
     padding-top: 0.5rem;
     cursor: pointer;
     color: #96AB90;
+    font-family: SweiGothicCJKtc-Regular;
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
@@ -90,7 +91,7 @@
 }
 
 .navItemActive {
-    color: #475d42;
+    color: #F9CBB7;
     composes: navItem;
     opacity: 1;
     padding-left: 2rem;
@@ -120,7 +121,7 @@
         padding-right:1rem ;
         text-align: center;
         opacity: 0.8;
-        font-family: SweiGothicCJKtc-Regular;/*???*/
+        font-family: SweiGothicCJKtc-Regular;
     }
     .navItem:hover {
         /* color: #4D6447; */
@@ -156,19 +157,21 @@
         padding-right:0.3rem ;
         text-align: center;
         opacity: 0.8;
-        font-family: SweiGothicCJKtc-Regular;/*???*/
+        font-family: SweiGothicCJKtc-Regular;
         font-size: medium;
     }
     .navItem:hover {
         /* color: #4D6447; */
         opacity: 1;
+        padding-left: 0.3rem;
+        padding-right:0.3rem ;
+        
     }
     .navItemActive {
         composes: navItem;
         opacity: 1;
         padding-left: 0.3rem;
         padding-right:0.3rem ;
-        padding-bottom: 0.8rem;
         border-bottom: #F9CBB7 solid 0.2rem ;
     }  
 }
