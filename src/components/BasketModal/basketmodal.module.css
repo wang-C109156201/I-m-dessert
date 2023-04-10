@@ -1,4 +1,9 @@
 /* Cart */
+@font-face {
+  font-family: SweiGothicCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
+  , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
 .btn {
     width: 100%;
     font-size: 1.1rem;
@@ -9,6 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #F9CBB7 !important;
+  }
+  .btn:hover {
+    background: #4D6447 !important;
   }
   
   .item {
@@ -33,6 +42,7 @@
   }
   
   .price {
+    font-family: SweiGothicCJKtc-Regular;
     font-size: 1rem;
     font-weight: bold;
     text-align: right;
@@ -51,6 +61,14 @@
   }
   
   .totalPrice {
+    font-family: SweiGothicCJKtc-Regular;
     font-weight: bold;
     text-align: right;
+  }
+
+  .text{
+    font-family: SweiGothicCJKtc-Regular;
+    margin-left: 12px;
+    color: #FFFCFB;
+    font-weight: bold;
   }

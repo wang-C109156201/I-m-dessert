@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
 
 import styles from "./basketmodal.module.css"
-import { CartIcon } from "../CartSummary/Icons";
+import { CartIcon } from "./Icons";
 import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
@@ -26,7 +26,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
    return (
       <div onClick={handleClick}>
          <Modal
-            title="Shopping Basket"
+            title="偶素購物車"
             open={isOpen}
             onCancel={handleCancel}
             footer={null}
@@ -34,7 +34,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          >
 
             {cartItems.length === 0 ? (
-               <div>Cart is empty</div>
+               <div>購物車還沒有東西</div>
             ) : (
                cartItems.map(item => (
                   <li key={item.id} className={styles.item}>
@@ -46,7 +46,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                      <div className={styles.content}>
                         <div className={styles.name}>{item.name}</div>
                         <div>
-                           Qty: {"   "}
+                           數量: {"   "}
                            <Select
                               defaultValue={item.qty}
                               onChange={(qty) => dispatch(addCartItems({
@@ -78,15 +78,15 @@ export default function BasketModal({ isOpen, toggleModal }) {
                ))
             )}
             <div className={styles.wrap}>
-               Total
+               總共
                <div className={styles.totalPrice}>${getTotalPrice()}</div>
             </div>
             <Button
                className={styles.btn}
                type="primary"
             >
-               <CartIcon size={20} color={"#ffffff"} />
-               <span style={{ marginLeft: 12 }}>Start Checkout</span>
+               <CartIcon size={20} color={"#FFFCFB"} />
+               <span className={styles.text}>去結帳</span>
             </Button>
          </Modal>
       </div>

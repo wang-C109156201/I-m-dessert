@@ -78,19 +78,19 @@
 }
 
 .navItem:hover {
-    color: #4D6447;
+    color: #F9CBB7;
     opacity: 1;
     padding-left: 2rem;
     padding-right:2rem ;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    background-color: #f9cbb749;
+    /* background-color: #f9cbb749; */
     border-radius: 5px;
     /* text-shadow: 0px 0px 2px #F9CBB7; */
 }
 
 .navItemActive {
-    color: #475d42;
+    color: #F9CBB7;
     composes: navItem;
     opacity: 1;
     padding-left: 2rem;
