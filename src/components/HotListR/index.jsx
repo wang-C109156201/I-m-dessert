@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React,{useEffect} from "react";
+import { Link } from 'react-router-dom';
 
 export default function HotListR() {
    useEffect(() => {
@@ -31,7 +32,7 @@ export default function HotListR() {
                      </div>
                   </div>
                   <div data-aos="fade-left" className={styles.img}>
-                     <a href="">
+                     <Link to={`/products/id/y1`}>
                         <img
                            className={styles.img_width}
                            src="/images/一禾堂-1.png"
@@ -39,7 +40,7 @@ export default function HotListR() {
                         <div className={styles.overlay}>
                            <div className={styles.text}>一禾堂</div>
                         </div>
-                     </a>
+                     </Link>
                   </div>
                </div>
             </div>

@@ -60,3 +60,11 @@
     }
 
 }
+@media (max-width: 576px) {
+
+    .Selectstyle {
+        width: 50%;
+        justify-content: center;
+    }
+
+}

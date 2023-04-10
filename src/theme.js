@@ -8,6 +8,7 @@ const darkTheme = {
     colorTextBase: "#FFFCFB",
     colorTextFooter: "#ffffff",
     colorBgFooter: "#000000",
+    colorNavBarBase:"red",
   },
   components: {
     Button: {
@@ -26,6 +27,7 @@ const lightTheme = {
   token: {
     colorBgBase: "#FFFCFB",
     colorTextBase: '#323721',
+    colorNavBarBase:"red",
   },
   components: {
     Button: {

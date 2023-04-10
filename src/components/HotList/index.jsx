@@ -4,6 +4,7 @@ import HotListR from "../HotListR";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React,{useEffect} from "react";
+import { Link } from 'react-router-dom';
 
 export default function HotList() {
    useEffect(() => {
@@ -15,7 +16,7 @@ export default function HotList() {
             <div className={styles.Row}>
                <div className={styles.item}>
                   <div data-aos="fade-right" className={styles.img}>
-                     <a href="">
+                  <Link to={`/products/id/g1`}>
                         <img
                            className={styles.img_width}
                            src="/images/綠帶純植物烘培-1.png"
@@ -24,7 +25,7 @@ export default function HotList() {
                         <div className={styles.overlay}>
                            <div className={styles.text}>綠帶純植物烘培</div>
                         </div>
-                     </a>
+                  </Link>
                   </div>
 
                   <div className={styles.info}>
@@ -48,7 +49,7 @@ export default function HotList() {
             <div className={styles.Row}>
                <div  className={styles.item}>
                   <div data-aos="fade-right" className={styles.img}>
-                     <a href="">
+                     <Link to={`/products/id/h4`}>
                         <img
                            className={styles.img_width}
                            src="/images/嬉皮烘培-1.png"
@@ -56,7 +57,7 @@ export default function HotList() {
                         <div className={styles.overlay}>
                            <div className={styles.text}>嬉皮烘培</div>
                         </div>
-                     </a>
+                     </Link>
                   </div>
 
                   <div className={styles.info}>

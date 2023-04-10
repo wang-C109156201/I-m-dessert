@@ -172,12 +172,10 @@
       justify-content: center;
       flex-direction: left;
       margin-top: 0.5rem;
-      padding: 0;
       
    }
    .item {
       border-radius: 1%;
-      padding: 0;
       display: flex; 
       align-items: center;
       justify-content: center;
@@ -185,8 +183,7 @@
       width: 100%;
    }
    .img{
-      position: relative;
-      width: 50%;
+      width: 100%;
       height: auto;
       display: block;
       margin: 0;
@@ -218,7 +215,6 @@
       height: auto;
       display: block;
       /* background-color: aqua; */
-      margin-right: 1rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
    }
