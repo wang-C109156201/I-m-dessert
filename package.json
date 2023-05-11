@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "@tanstack/react-query": "^4.29.5",
     "antd": "^5.4.0",
     "aos": "^2.3.4",
     "carousel": "^0.0.3",
+    "firebase": "^9.21.0",
     "i": "^0.3.7",
     "lodash": "^4.17.21",
     "nuka-carousel": "^5.5.1",

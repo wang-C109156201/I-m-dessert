@@ -9,6 +9,7 @@ import MySelect from "../components/MySelect";
 import { theme } from 'antd';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useProducts } from '../react-query';
 
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
@@ -25,6 +26,10 @@ function Category() {
     token: { colorBgBase, colorTextBase },
   } = theme.useToken();
   // const sort = ['商品排序', '價錢高到低', '價錢低到高']
+
+  const { data, isLoading } = useProducts();
+  const products = data || [];
+  
   return (
 
     <div className="maincontainer mainLayout">

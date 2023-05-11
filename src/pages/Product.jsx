@@ -30,7 +30,6 @@ function Product() {
      (x) => x.id === productId
   );
 
-  
   return (
     <div className="maincontainer mainLayout">
       <ScrollToTopOnMount/>

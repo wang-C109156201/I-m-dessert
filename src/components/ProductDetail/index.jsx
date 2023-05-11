@@ -7,22 +7,24 @@ import { useSearchParams } from 'react-router-dom';
 import AddToCart from '../AddToCArt';
 import styles from "./productdetail.module.css"
 import Slider from "react-slick";
+import { useProducts } from '../../react-query';
+
+
 const { Option } = Select;
 const carouselEL = React.createRef()
+
 function ProductDetail({ product }) {
+   const { data, isLoading } = useProducts();
+   const products = data || [];
    const [searchParams] = useSearchParams();
    const qtyFromBasket = searchParams.get('qtyFromBasket');
-   const initQty = !!qtyFromBasket ? Number(qtyFromBasket) : product.countInStock > 0 ? 1 : 0
+   const initQty = qtyFromBasket !== undefined && qtyFromBasket !== null
+      ? Number(qtyFromBasket)
+      : products.countInStock > 0
+         ? 1
+         : 0;
    const [qty, setQty] = useState(initQty);
 
-   // const contentStyle = {
-   //    margin: 0,
-   //    height: '160px',
-   //    color: '#fff',
-   //    lineHeight: '160px',
-   //    textAlign: 'center',
-   //    background: '#364d79',
-   // };
    const onChange = (currentSlide) => {
       console.log(currentSlide);
    };
@@ -40,9 +42,8 @@ function ProductDetail({ product }) {
    };
 
    useEffect(() => {
-      setQty(initQty)
-   }, [initQty])
-
+      setQty(initQty);
+   }, []);
    return (
 
       <div className="container">
@@ -85,14 +86,14 @@ function ProductDetail({ product }) {
                         <img
                            alt={product.name}
                            className={styles.image}
-                           src={product.img1}
+                           src={products.img1}
                         />
                      </div>
                      <div>
                         <img
-                           alt={product.name}
+                           alt={products.name}
                            className={styles.image}
-                           src={product.img2}
+                           src={products.img2}
                         />
                      </div>
                   </Carousel>
@@ -109,27 +110,27 @@ function ProductDetail({ product }) {
                         src="/images/icon_Linking.png"
                      />
                      <h2 className={styles.category} >
-                        {product.category}
+                        {products.category}
                      </h2>
                      <h1 className={styles.name} >
-                        {product.name}
+                        {products.name}
                      </h1>
                      <p className={styles.description}>
-                        {product.description_long}
+                        {products.description_long}
                      </p>
                      <div className={styles.wrap}>
                         <div className="textbox">
                            <p className={styles.text}>素別</p>
                            <p className={styles.price} >
-                              {product.Vegan}
+                              {products.Vegan}
                            </p>
                            <p className={styles.text}>價格</p>
                            <p className={styles.price} >
-                              NT$&nbsp;{product.price}
+                              NT$&nbsp;{products.price}
                            </p>
                         </div>
                         {/* <p className={styles.status}>
-                     Status: {product.countInStock > 0 ? "In Stock" : "Unavailable."}
+                     Status: {products.countInStock > 0 ? "In Stock" : "Unavailable."}
                   </p> */}
                         <div className={styles.select}>
                            <p className={styles.text}>數量 {"   "}</p>
@@ -139,7 +140,7 @@ function ProductDetail({ product }) {
                               className={styles.selectStyle}
                               onChange={val => setQty(val)}
                            >
-                              {[...Array(product.countInStock).keys()].map((x) => (
+                              {[...Array(products.countInStock).keys()].map((x) => (
                                  <Option key={x + 1} value={x + 1}>
                                     {x + 1}
                                  </Option>
@@ -147,13 +148,13 @@ function ProductDetail({ product }) {
                            </Select>
                         </div>
                         <p className={styles.qty}>
-                           目前金額： {product.price * qty}$&nbsp;/&nbsp;{product.price * qty > 1000 ? "達到免運門檻囉" : "未達到免運，還差"+(1000-product.price * qty)+"$" }
+                           目前金額： {products.price * qty}$&nbsp;/&nbsp;{products.price * qty > 1000 ? "達到免運門檻囉" : "未達到免運，還差"+(1000-products.price * qty)+"$" }
                         </p>
                         <Row justify="space-between" align="middle">
                            <Button className={styles.btn}>
                               立即購買
                            </Button>
-                           <AddToCart product={product} qty={qty} />
+                           <AddToCart products={products} qty={qty} />
                         </Row>
                      </div>
                   </div>
@@ -174,10 +175,10 @@ function ProductDetail({ product }) {
                      <div className={styles.info} >
 
                         <h1 className={styles.description_name} >
-                           {product.name}
+                           {products.name}
                         </h1>
                         <p className={styles.description}>
-                           {product.description}
+                           {products.description}
                         </p>
 
                      </div>
@@ -188,9 +189,9 @@ function ProductDetail({ product }) {
                      justify="center" align="middle"
                   >
                      <img
-                        alt={product.name}
+                        alt={products.name}
                         className={styles.image2}
-                        src={product.img2}
+                        src={products.img2}
                      />
                   </Col>
 
@@ -211,7 +212,7 @@ function ProductDetail({ product }) {
                         主要成分
                      </h1>
                      <p className={styles.description}>
-                        {product.Ingredients}
+                        {products.Ingredients}
                      </p>
 
                   </div>
