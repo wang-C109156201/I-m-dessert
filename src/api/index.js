@@ -45,10 +45,11 @@ export const feedProducts = async () => {
   });
 };
 
-export const getProductById = async (id) => {
-   const docRef = await doc(db, "products", id);
-   const docSnap = await getDoc(docRef);
-   return docSnap.data();
+export const getProductById = async ({ queryKey }) => {
+  const [id] = queryKey;
+  const docRef = await doc(db, "products", id);
+  const docSnap = await getDoc(docRef);
+  return docSnap.data();
 };
 
 export const getProductsByCategory = async (category) => {
@@ -72,3 +73,9 @@ export const getProducts = async () => {
    });
    return result;
 };
+
+export const signInWithEmailPassword = async ({ email, password }) => {
+};
+
+// export const registerWithEmailPassword = async ({ email, password, username }) => {
+// };

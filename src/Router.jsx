@@ -8,6 +8,7 @@ import Product from './pages/Product';
 import Store from './pages/Store';
 import Store2 from './pages/Store2';
 import Store3 from './pages/Store3';
+import Login from './pages/Login';
 import { darkTheme, lightTheme } from './theme';
 import { selectLightMode } from "./redux/colorSlice";
 
@@ -36,6 +37,10 @@ function Router() {
             <Route path="store3">
               <Route path="yiihotang" element={< Store3/>} />
               <Route path="yiihotang3/:sort" element={< Store3/>} />
+            </Route>
+            <Route path="auth">
+              <Route path="login" element={<Login />} />
+              {/* <Route path="register" element={<Register />} /> */}
             </Route>
           </Routes>
         </BrowserRouter>

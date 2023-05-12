@@ -1,17 +1,30 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import styles from "./header.module.css";
 import HamburgerMenu from "../HamburgerMenu"
-import NavBar from "../NavBar";
+import NavBarNew from "../NavBarNew";
 import CartSummary from "../CartSummary";
 import { Icon } from "./Icons";
-import SetColorMode from "../SetColorMode";
+import SetColorMode from "../SetColorMode"
 import UserInfo from "../UserInfo"
 export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
+    const [isTransparent, setIsTransparent] = useState(true); // 初始化為透明
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    const handleScroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      setIsTransparent(scrollTop >= 550); // 滾動到 500px 時設置為非透明
+    };
     return (
         <div >
-            <div className={styles.header}>
+            <div className={isTransparent ? styles.headercolor : styles.header}>
             {/* <div className="container"> */}
              <NavLink to="/">
                 <img className={styles.logo} src="/images/icon_logo.png" alt="logo" />
@@ -20,7 +33,7 @@ export default function Header() {
                 onClick={() => setIsOnTouch(!isOnTouch)}
                 isOnTouch={isOnTouch}
             />
-            <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
+            <NavBarNew open={isOnTouch} onClose={() => setIsOnTouch(false)} />
             <CartSummary />
             <nav className={styles.icon} >
                 <UserInfo className={styles.icon} size={32} />

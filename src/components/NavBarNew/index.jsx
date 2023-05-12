@@ -1,3 +1,4 @@
+import { useState,useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import { Drawer } from 'antd';
 import styles from './navbar.module.css';
@@ -53,6 +54,19 @@ export default function NavBar({ open, onClose }) {
             </NavLink>
         </>
     )
+    const [isTransparent, setIsTransparent] = useState(true); // 初始化為透明
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    const handleScroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      setIsTransparent(scrollTop >= 400); // 滾動到 500px 時設置為非透明
+    };
 
     return (
         <>
@@ -73,7 +87,7 @@ export default function NavBar({ open, onClose }) {
                     </NavLink>
                 </div>
             </Drawer>
-            <div className={styles.nav}></div>
+            <div className={isTransparent ? styles.navcolor : styles.nav}></div>
         </>
 
     );

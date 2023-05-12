@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async"
-import Header from "../components/Header"
+import HeaderNew from "../components/HeaderNew"
 import Footer from "../components/Footer"
 import HomePageContent from "../components/HomePageContent";
 import { theme } from 'antd';
@@ -35,7 +35,7 @@ function Home() {
 
       </Helmet>
 
-      <Header
+      <HeaderNew
         className="layoutHeader"
         slogan="An example made by Vite."
       />

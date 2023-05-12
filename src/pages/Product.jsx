@@ -9,6 +9,7 @@ import { theme } from 'antd';
 import { Helmet } from "react-helmet-async"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useProductById } from '../react-query';
 
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
@@ -25,10 +26,16 @@ function Product() {
     token: { colorBgBase, colorTextBase },
   } = theme.useToken();
 
+  // const { productId } = useParams();
+  // const product = products.find(
+  //    (x) => x.id === productId
+  // );
   const { productId } = useParams();
-  const product = products.find(
-     (x) => x.id === productId
-  );
+  const { data, isLoading } = useProductById(productId);
+
+  const product = data || {};
+
+
 
   return (
     <div className="maincontainer mainLayout">
@@ -49,7 +56,7 @@ function Product() {
       {/* <h1 style={{color:"#000" ,margin:"100px"}}>這是購物車頁</h1> */}
 
       {/* <ProductList products={products} className="layoutContent" /> */}
-      <ProductDetail product={product} className="layoutContent" />
+      <ProductDetail product={product} isLoading={isLoading} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>
   );

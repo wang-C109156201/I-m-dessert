@@ -49,10 +49,18 @@
   } */
   .nav{
     position: fixed;
+    background: #4d64474a !important;
+    border-bottom: 0.5px solid #fffcfb5a ;
+    width: 100%;
+    height: 100px;
+  }
+  .navcolor{
+    position: fixed;
     background: #4D6447 !important;
     border-bottom: 0.5px solid #fffcfb5a ;
     width: 100%;
     height: 100px;
+    transition: background-color 0.3s ease-in-out;
   }
   .navBar {
     display: none;

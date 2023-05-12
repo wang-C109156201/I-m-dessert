@@ -28,7 +28,7 @@ function Category() {
   // const sort = ['商品排序', '價錢高到低', '價錢低到高']
 
   const { data, isLoading } = useProducts();
-  const products = data || [];
+  const products = data || [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8}]; //這邊要有id才能有spinner
   
   return (
 
@@ -43,6 +43,7 @@ function Category() {
                }
         `}</style>
       </Helmet>
+      
       <Header
         className="layoutHeader"
         slogan="An example made by Vite."
@@ -51,7 +52,7 @@ function Category() {
       <Logo />
       <MySelect />
       {/* </Col> */}
-      <ProductList products={products} className="layoutContent" />
+      <ProductList products={products} isLoading={isLoading} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>
   );
