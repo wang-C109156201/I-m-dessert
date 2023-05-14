@@ -12,8 +12,9 @@ const darkTheme = {
   },
   components: {
     Button: {
-      colorPrimary: "#6366f2;",
-      colorPrimaryHover: "4D6447",
+      colorPrimary: "#4D6447;",
+      colorPrimaryHover: "#F9CBB7",
+      colorPrimaryActive: "#F9CBB7",
     },
     Switch: {
       colorPrimary: "#F9CBB7;",
@@ -31,8 +32,9 @@ const lightTheme = {
   },
   components: {
     Button: {
-      colorPrimary: "#6366f2;",
+      colorPrimary: "#F9CBB7",
       colorPrimaryHover: "#4D6447",
+      colorPrimaryActive: "#4D6447",
     },
     Switch: {
       colorPrimary: "#F9CBB7;",

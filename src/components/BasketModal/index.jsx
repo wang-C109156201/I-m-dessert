@@ -86,7 +86,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                type="primary"
             >
                <CartIcon size={20} color={"#FFFCFB"} />
-               <span className={styles.text}>去結帳</span>
+               <span className={styles.text}>去 結 帳</span>
             </Button>
          </Modal>
       </div>

@@ -1,0 +1,86 @@
+.registerForm {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+  margin-top: 10rem;
+  font-family: SweiGothicCJKtc-Regular;
+}
+
+.titletext {
+  text-align: center;
+  font-family: SweiGothicCJKtc-Regular;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  text-align: center;
+  font-family: SweiGothicCJKtc-Regular;
+  margin-top: 1rem;
+
+}
+
+.login_text {
+  font-family: SweiGothicCJKtc-Regular;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #657161;
+}
+.login_text:hover {
+
+  color: #96AB90;
+}
+.check_text {
+  font-family: SweiGothicCJKtc-Regular!important;
+  font-size: 0.8rem !important;
+}
+
+.loginForm__forgot {
+  float: right;
+}
+
+.loginForm__forgot {
+  float: left;
+}
+
+.loginForm__button {
+  width: 100%;
+  background: #F9CBB7;
+  font-family: SweiGothicCJKtc-Regular;
+  font-size: 0.8rem;
+}
+
+.loginForm__successWrap {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.7rem;
+  width: 80%;
+  border: solid 1px green;
+  border-radius: 4px;
+}
+
+.loginForm__successTitle {
+  color: green;
+  text-align: center;
+}
+
+.loginForm__errorWrap {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.7rem;
+  width: 80%;
+  border: solid 1px darkred;
+  border-radius: 4px;
+}
+
+.loginForm__errorTitle {
+  color: darkred;
+}
+
+.loginForm__errorMessage {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 0.5rem;
+}

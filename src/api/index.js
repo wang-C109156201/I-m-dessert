@@ -5,11 +5,20 @@ import {
   doc,
   setDoc,
   getDoc,
+  updateDoc,
   getDocs,
   deleteDoc,
   query,
   where,
+  initializeFirestore,
 } from "firebase/firestore";
+
+import { 
+  getAuth, signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  initializeAuth,
+} from 'firebase/auth';
+
 import products from "../json/products.json";
 
 const firebaseConfig = {
@@ -28,6 +37,9 @@ const app = app_length ? getApp() : initializeApp(firebaseConfig);
 
 // REFERENCE DB
 const db = getFirestore(app);
+
+// REFERENCE AUTH
+const auth = app_length ? getAuth(app) : initializeAuth(app);
 
 // REFERENCE COLLECTION
 const productsCollection = collection(db, "products");
@@ -74,8 +86,55 @@ export const getProducts = async () => {
    return result;
 };
 
-export const signInWithEmailPassword = async ({ email, password }) => {
+export const getUserInfo = async () => {
+  const storedUser = localStorage.getItem("user");
+  const user = auth?.currentUser || JSON.parse(storedUser) || null;
+
+  if(user) {
+    const docRef = doc(db, "users", user.uid);
+    const docSnap = await getDoc(docRef);
+    const userDoc = docSnap.data();
+    return {
+      uid: user.uid,
+      email: user.email,
+      ...userDoc,
+    };    
+  } else {
+    return {}
+  }
+}
+
+export const login = async ({ email, password }) => {
+  await signInWithEmailAndPassword(
+    auth,
+    email,
+    password
+  );
 };
 
-// export const registerWithEmailPassword = async ({ email, password, username }) => {
-// };
+export const register = async ({ name, email, password }) => {
+  const userCredential = await createUserWithEmailAndPassword(
+    auth,
+    email,
+    password
+  );
+  const user = userCredential?.user;
+  const docRef = doc(db, "users", user.uid);
+  await setDoc(docRef, {
+    name,
+  });
+};
+
+export const updateUserInfo = async ({ name, adrs, tel, uid }) => {
+  const docRef = doc(db, "users", uid);
+  await updateDoc(docRef, {
+    name,
+    adrs,
+    tel,
+  });
+}
+
+
+export const logout = async () => {
+  auth.signOut();
+}

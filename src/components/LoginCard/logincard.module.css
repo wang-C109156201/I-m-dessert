@@ -1,7 +1,43 @@
-.layout{
+@font-face {
+  font-family: SweiGothicCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
+
+.row {
+  margin-top: 6.5rem;
+}
+
+.layout {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: SweiGothicCJKtc-Regular;
+}
+
+.textlayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: SweiGothicCJKtc-Regular;
+  font-size: 0.8rem;
+}
+
+.text {
+  font-family: SweiGothicCJKtc-Regular;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #657161;
+}
+
+.text:hover {
+
+  color: #96AB90;
+}
+
+.Checktext {
+  font-family: SweiGothicCJKtc-Regular;
+  font-size: 0.8rem !important;
 }
 
 .loginForm {
@@ -9,23 +45,40 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 20rem;
-  margin-top: 15rem;
-  
+  /* margin-top: 5.5rem; */
+
 }
-.logImage{
+
+.email {
+  margin-bottom: 1.5rem;
+}
+
+/* .logImage {
   position: absolute;
-  width: 60%;
+  width: 53.8%;
+  height: 53.8%;
   top: 5.5rem;
   left: 0;
-}
-.logImg{
-  width: 60%;
-  height: 60%;
-  margin-top: 10rem;
+} */
+
+.logImg {
+  /* width: 55%;
+  height: 55%; */
+  /* margin-top: 10rem; */
+  height: 100vh;
 }
 
 .loginForm__forgot {
   float: right;
+  font-family: SweiGothicCJKtc-Regular;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  color: #657161;
+}
+
+.loginForm__forgot:hover {
+
+  color: #96AB90;
 }
 
 /* .loginForm__forgot {
@@ -34,6 +87,9 @@
 
 .loginForm__button {
   width: 100%;
+  /* background: #F9CBB7; */
+  font-family: SweiGothicCJKtc-Regular;
+  font-size: 0.8rem;
 }
 
 .loginForm__successWrap {
@@ -70,3 +126,16 @@
   margin-top: 0;
   font-size: 0.5rem;
 }
+
+@media (max-width: 768px) {
+
+  .logImg {
+    display: none;
+
+  }
+
+  .loginForm {
+    margin-top: 6rem;
+  
+  }
+} 

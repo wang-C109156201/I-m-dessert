@@ -9,6 +9,8 @@ import Store from './pages/Store';
 import Store2 from './pages/Store2';
 import Store3 from './pages/Store3';
 import Login from './pages/Login';
+import Register from './pages/Register';
+import Profile from './pages/Profile';
 import { darkTheme, lightTheme } from './theme';
 import { selectLightMode } from "./redux/colorSlice";
 
@@ -40,7 +42,8 @@ function Router() {
             </Route>
             <Route path="auth">
               <Route path="login" element={<Login />} />
-              {/* <Route path="register" element={<Register />} /> */}
+              <Route path="register" element={<Register />} />
+              <Route path="profile" element={<Profile />} />
             </Route>
           </Routes>
         </BrowserRouter>
