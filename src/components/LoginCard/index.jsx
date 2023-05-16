@@ -177,7 +177,7 @@ const LoginCard = ({ redirect }) => {
   }, [isSuccess, redirect]);
 
   return (
-    <Row align="middle" style={{ width: "100%", margin: "auto", marginTop: "5rem" }}>
+    <Row align="middle" style={{ width: "100%", margin: "auto", marginTop: "6.5rem" }}>
       <img
         className={styles.logImg}
         src="/images/log-img.png"

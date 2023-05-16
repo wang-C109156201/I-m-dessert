@@ -36,7 +36,7 @@ const app_length = getApps().length > 0;
 const app = app_length ? getApp() : initializeApp(firebaseConfig);
 
 // REFERENCE DB
-const db = getFirestore(app);
+const db = app_length ? getFirestore(app) : initializeFirestore(app, { experimentalForceLongPolling: true, });
 
 // REFERENCE AUTH
 const auth = app_length ? getAuth(app) : initializeAuth(app);
@@ -94,9 +94,11 @@ export const getUserInfo = async () => {
     const docRef = doc(db, "users", user.uid);
     const docSnap = await getDoc(docRef);
     const userDoc = docSnap.data();
+    console.log(user, 'getUserinfo');
     return {
       uid: user.uid,
       email: user.email,
+      // name: user.name,
       ...userDoc,
     };    
   } else {
@@ -110,6 +112,8 @@ export const login = async ({ email, password }) => {
     email,
     password
   );
+  const user = auth.currentUser;
+  localStorage.setItem("user", JSON.stringify(user));
 };
 
 export const register = async ({ name, email, password }) => {
@@ -118,7 +122,9 @@ export const register = async ({ name, email, password }) => {
     email,
     password
   );
+  
   const user = userCredential?.user;
+  localStorage.setItem("user", JSON.stringify(user));
   const docRef = doc(db, "users", user.uid);
   await setDoc(docRef, {
     name,
@@ -132,9 +138,13 @@ export const updateUserInfo = async ({ name, adrs, tel, uid }) => {
     adrs,
     tel,
   });
+  const user = auth.currentUser;
+  localStorage.setItem("user", JSON.stringify(user));
 }
 
 
 export const logout = async () => {
-  auth.signOut();
+  await auth.signOut();
+  localStorage.removeItem("user");
 }
+

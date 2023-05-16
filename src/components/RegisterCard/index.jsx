@@ -8,7 +8,7 @@ import styles from "./registercard.module.css"
 
 const RegisterCard = ({ redirect }) => {
 
-  const { mutate, error, isLoading, isError, isSuccess, data } = useRegisterWithEmailPassword();
+  const { mutate, error, isLoading, isError, isSuccess} = useRegisterWithEmailPassword();
 
   const [form] = Form.useForm();
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const RegisterCard = ({ redirect }) => {
     >
       <h2 className={styles.titletext}>註冊偶素會員</h2>
       <Form.Item
-        name="username"
+        name="name"
         label="姓名&ensp;"
         tooltip="建議是真實姓名才方便取貨喔~"
         rules={[
@@ -65,18 +65,28 @@ const RegisterCard = ({ redirect }) => {
       </Form.Item>
 
       <Form.Item
-        name="password"
-        label="密碼&ensp;"
-        rules={[
-          {
-            required: true,
-            message: "請輸入密碼",
-          },
-        ]}
-        hasFeedback
-      >
-        <Input.Password />
-      </Form.Item>
+  name="password"
+  label="密碼&ensp;"
+  rules={[
+    {
+      required: true,
+      message: "請輸入密碼",
+    },
+    ({ getFieldValue }) => ({
+      validator(_, value) {
+        if (!value || value.length >= 6) {
+          // 密碼符合要求，返回 Promise.resolve()，表示驗證通過
+          return Promise.resolve();
+        }
+
+        return Promise.reject(new Error("密碼長度至少須為6位數"));
+      },
+    }),
+  ]}
+  hasFeedback
+>
+  <Input.Password />
+</Form.Item>
 
       <Form.Item
         name="rePassword"
@@ -149,9 +159,9 @@ const RegisterCard = ({ redirect }) => {
           <div className={styles.loginForm__errorWrap}>
             <h3 className={styles.loginForm__errorTitle}>
               <WarningOutlined  />
-              {"  "}There was a problem
+              {"  "}發生錯誤
             </h3>
-            <p className={styles.loginForm__errorMessage}>{error.response.data?.detail}</p>
+            <p className={styles.loginForm__errorMessage}>{error.message}</p>
           </div>
         )}
       </Form.Item>

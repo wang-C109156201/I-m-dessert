@@ -23,7 +23,7 @@ export default function Header() {
             <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} />
             <CartSummary />
             <nav className={styles.icon} >
-                <UserInfo className={styles.icon} size={32} />
+                <UserInfo/>
             </nav>
             <nav className={styles.coloricon} >
                 <SetColorMode className={styles.coloricon} size={32} />

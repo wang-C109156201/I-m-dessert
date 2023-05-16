@@ -5,10 +5,11 @@ import { useUserInfo } from "../../react-query";
 
 export default function UserInfo(props) {
    const { data: userInfo} = useUserInfo();
+   console.log(userInfo, 'userInfo icon')
    const navigate = useNavigate();
 
    const goToProfile = () => {
-      if(userInfo?.name)
+      if(userInfo?.email)
          navigate("/auth/profile")
       else
          navigate("/auth/login?redirect=/auth/profile");
@@ -17,7 +18,7 @@ export default function UserInfo(props) {
       <div onClick={goToProfile} style={{ ...props.style }} className={styles.userInfo} >
          <Icon className={styles.icon} size={32} />
          <p className={styles.userInfoText}>
-         {!!userInfo?.name
+         {!!userInfo?.email
                ? `${userInfo.name}`
                : `登入`
             }

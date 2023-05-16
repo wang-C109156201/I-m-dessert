@@ -33,7 +33,7 @@ const ProfileCard = ({ redirect }) => {
       form={form}
       initialValues={userInfo}
     >
-      <h2 className={styles.title}>偶素會員</h2>
+      <h2 className={styles.title}>偶素{userInfo.name}</h2>
       <Form.Item
         label="姓名: "
         name="name"
@@ -105,4 +105,3 @@ const ProfileCard = ({ redirect }) => {
   );
 };
 export default ProfileCard;
-``

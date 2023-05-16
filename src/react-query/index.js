@@ -9,7 +9,7 @@ import {
   register,
   getUserInfo,
   updateUserInfo,
-  logout
+  logout,
   // signInWithEmailPassword,
   // registerWithEmailPassword
 } from "../api";
@@ -54,11 +54,13 @@ export const useProducts = () => {
   //   return { mutate, isLoading, isSuccess, isError, data, error, status };
   // }
   export const useUserInfo = () => {
-    return useQuery({
+    const userInfo = useQuery({
       queryKey: ["uid"],
       queryFn: getUserInfo,
       initialData: {},
     });
+    console.log(userInfo?.data, 'useUserInfo')
+    return userInfo
   };
   
   export const useSignInWithEmailPassword = () => {
