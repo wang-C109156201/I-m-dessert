@@ -43,6 +43,9 @@
   /* color: #F9CBB7; */
   /* font-family: SweiGothicCJKtc-Regular; */
 }
+.user{
+background: #000;
+}
 @media (max-width: 768px) {
   /* .navItem {
     display: none;
@@ -69,13 +72,26 @@
     display: flex;
   }
 
-
+.color{
+  color: #96AB90;
+    /* font-size: 1rem;
+    margin-bottom: 0;
+    margin-left: 0; */
+    /* text-align: center; */
+    /* opacity: 0.7; */
+    font-family: SweiGothicCJKtc-Regular;
+    transition: all 0.5s ease-in-out;
+}
+.color:hover{
+  color: #F9CBB7;
+ 
+}
   .navItem {
     color: #96AB90;
     /* font-size: 1rem;
     margin-bottom: 0;
     margin-left: 0; */
-    text-align: center;
+    /* text-align: center; */
     opacity: 0.7;
     font-family: SweiGothicCJKtc-Regular;
   }

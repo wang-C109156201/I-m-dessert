@@ -69,18 +69,20 @@
 .coloricon {
   display: inline-block;
   position: absolute !important;
-  top: 2.2rem;
-  right:9rem;
+  top: 2.4rem;
+  right:5.5rem;
   cursor: pointer;
 }
 
 
 @media (min-width: 768px) {
   .icon {
-     right: 5rem;
+    top: 1.8rem;
+     right: 1.8rem;
+     
   }
   .coloricon {
-    top: 2.2rem;
+    top: 2.4rem;
     right: 9rem;
  }
 }

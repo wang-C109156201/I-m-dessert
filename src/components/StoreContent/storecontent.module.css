@@ -58,10 +58,17 @@
 .NavBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    padding-right:0.5rem ;
+    padding-bottom: 0.5rem;
+    padding-top:2rem;
+    cursor: pointer;
+    font-family: SweiGothicCJKtc-Regular;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 .navItem {
@@ -71,6 +78,7 @@
     padding-right:2rem ;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    margin: auto;
     cursor: pointer;
     color: #96AB90;
     font-family: SweiGothicCJKtc-Regular;
