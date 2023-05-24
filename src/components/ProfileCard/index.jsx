@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Form, Input, Button,Row } from "antd";
+import { Form, Input, Button,Row,notification } from "antd";
 import styles from "./profilecard.module.css"
 import { useUpdateProfile, useLogout, useUserInfo } from "../../react-query";
 
@@ -16,8 +16,17 @@ const ProfileCard = ({ redirect }) => {
     update.mutate({ ...values, uid: userInfo.uid });
   };
 
+  const openNotification = () => {
+    notification.open({
+      message: '已登出',
+      placement: 'bottomRight',
+      icon:(<img src="/shortcut icon.png" alt="logo" />)
+    });
+  };
+
   const onLogout = () => {
     logout.mutate();
+    openNotification();
     navigate("/");
   }
 

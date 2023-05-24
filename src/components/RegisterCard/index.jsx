@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
-import { Form, Input, Checkbox, Button } from "antd";
+import { Form, Input, Checkbox, Button,notification } from "antd";
 import { WarningOutlined } from "@ant-design/icons";
 
 import { useRegisterWithEmailPassword } from "../../react-query";
@@ -18,9 +18,18 @@ const RegisterCard = ({ redirect }) => {
     mutate(values);
   };
 
+  const openNotification = () => {
+    notification.open({
+      message: '註冊成功',
+      placement: 'bottomRight',
+      icon:(<img src="/shortcut icon.png" alt="logo" />)
+    });
+  };
+
   useEffect(() => {
     if (isSuccess) {
       navigate(redirect);
+      openNotification();
     }
   }, [isSuccess, redirect]); 
 
@@ -40,7 +49,7 @@ const RegisterCard = ({ redirect }) => {
         rules={[
           {
             required: true,
-            message: "Please input your name!",
+            message: "請輸入姓名",
             whitespace: true,
           },
         ]}
@@ -122,7 +131,7 @@ const RegisterCard = ({ redirect }) => {
             validator: (_, value) =>
               value
                 ? Promise.resolve()
-                : Promise.reject(new Error("Should accept agreement")),
+                : Promise.reject(new Error("請閱讀相關條款")),
           },
         ]}
       >

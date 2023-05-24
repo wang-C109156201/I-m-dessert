@@ -4,6 +4,7 @@ import styles from "./homepagecontent.module.css";
 import { Row, Col, Carousel, Button } from "antd";
 import HotList from "../HotList";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { motion } from "framer-motion";
 const carouselEL = React.createRef()
 
 export default function HomePageContent({ title }) {
@@ -11,6 +12,36 @@ export default function HomePageContent({ title }) {
     const onChange = (currentSlide) => {
         // console.log(currentSlide);
     };
+
+    const typingContainer = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.14,
+            }
+        }
+    }
+    const typingText = {
+        hidden: { opacity: 0, y: "-20px" },
+        show: {
+            opacity: 1,
+            y: "0",
+            transition: {
+                ease: 'easeInOut',
+            }
+        }
+    }
+    // const explainProduct = {
+    //     hidden: { opacity: 0 },
+    //     show: {
+    //         opacity: 1,
+    //         transition: {
+    //             // delay: 5,
+    //             staggerChildren: 0.2,
+    //         }
+    //     }
+    // }
     // const contentStyle = {
     //     margin: 0,
     //     height: '160px',
@@ -32,6 +63,20 @@ export default function HomePageContent({ title }) {
                     >
                         <div className={styles.newsbox}>
                             <div className={styles.boxstyle}>
+                                <motion.h1 className={styles.antext} variants={typingContainer} initial="hidden" animate="show">
+                                    {
+                                        Array.from("I AM VEGAN DESSERT").map((word, i) => (
+                                            <motion.span key={i} variants={typingText}>{word}</motion.span>
+                                        ))
+                                    }
+                                </motion.h1>
+                                <motion.h1 className={styles.estd} variants={typingContainer} initial="hidden" animate="show">
+                                    {
+                                        Array.from("ESTD 2023").map((word, i) => (
+                                            <motion.span key={i} variants={typingText}>{word}</motion.span>
+                                        ))
+                                    }
+                                </motion.h1>
                                 <img
                                     className={styles.ns}
                                     src="/images/news-1.png"
@@ -104,11 +149,11 @@ export default function HomePageContent({ title }) {
                                     className={styles.news}
                                     src="/images/news-1.png"
                                     alt="news1" />
-                                    <div className={styles.ClNewsTextBox}>
-                                <p className={styles.text}>慶開幕！滿千免運費活動開跑</p>
-                                <Button className={styles.btn} >
-                                    MORE
-                                </Button>
+                                <div className={styles.ClNewsTextBox}>
+                                    <p className={styles.text}>慶開幕！滿千免運費活動開跑</p>
+                                    <Button className={styles.btn} >
+                                        MORE
+                                    </Button>
                                 </div>
                             </div>
                             <div>
@@ -116,11 +161,11 @@ export default function HomePageContent({ title }) {
                                     className={styles.news}
                                     src="/images/news-2.png"
                                     alt="news2" />
-                                    <div className={styles.ClNewsTextBox}>
-                                <p className={styles.text}>草莓季登場！一起感受酸甜滋味</p>
-                                <Button className={styles.btn} >
-                                    MORE
-                                </Button>
+                                <div className={styles.ClNewsTextBox}>
+                                    <p className={styles.text}>草莓季登場！一起感受酸甜滋味</p>
+                                    <Button className={styles.btn} >
+                                        MORE
+                                    </Button>
                                 </div>
                             </div>
                             <div>
@@ -128,11 +173,11 @@ export default function HomePageContent({ title }) {
                                     className={styles.news}
                                     src="/images/news-3.png"
                                     alt="news3" />
-                                    <div className={styles.ClNewsTextBox}>
-                                <p className={styles.text}>偶素甜點，素別小學堂</p>
-                                <Button className={styles.btn} >
-                                    MORE
-                                </Button>
+                                <div className={styles.ClNewsTextBox}>
+                                    <p className={styles.text}>偶素甜點，素別小學堂</p>
+                                    <Button className={styles.btn} >
+                                        MORE
+                                    </Button>
                                 </div>
                             </div>
                         </Carousel>

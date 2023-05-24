@@ -4,7 +4,7 @@
 }
 
 .row {
-  margin-top: 6.5rem;
+  margin-top: 1rem;
 }
 
 .layout {
@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   font-family: SweiGothicCJKtc-Regular;
+  flex-direction: column;
 }
 
 .textlayout {
@@ -42,7 +43,7 @@
 
 .loginForm {
   padding: 1rem;
-  margin-left: auto;
+  margin-left: 10rem;
   margin-right: auto;
   max-width: 20rem;
   /* margin-top: 5.5rem; */
@@ -66,6 +67,10 @@
   height: 55%; */
   /* margin-top: 10rem; */
   height: 100vh;
+}
+.logo{
+  width: 15%;
+  display: none;
 }
 
 .loginForm__forgot {
@@ -143,14 +148,21 @@
 } 
 
 @media (max-width: 768px) {
+.logo{
+  display: block;
+  margin-top: 5rem;
+}
+.loginForm {
 
+  margin-left: auto;
+}
   .logImg {
     display: none;
 
   }
 
   .loginForm {
-    margin-top: 6rem;
-  
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
   }
 } 

@@ -150,7 +150,7 @@
 // export default LoginCard;
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Input, Button, Checkbox, Row } from 'antd';
+import { Form, Input, Button, Checkbox, Row,notification } from 'antd';
 import { WarningOutlined, MailOutlined, LockOutlined } from '@ant-design/icons';
 
 import { useSignInWithEmailPassword } from "../../react-query";
@@ -169,18 +169,33 @@ const LoginCard = ({ redirect }) => {
     console.log("Received values of form: ", values);
     mutate(values);
   };
+  const openNotification = () => {
+    notification.open({
+      message: '已登入',
+      placement: 'bottomRight',
+      icon:(<img src="/shortcut icon.png" alt="logo" />)
+    });
+  };
 
   useEffect(() => {
     if (isSuccess) {
       navigate(redirect);
+      openNotification();
     }
   }, [isSuccess, redirect]);
 
   return (
     <Row align="middle" style={{ width: "100%", margin: "auto", marginTop: "6.5rem" }}>
+
       <img
         className={styles.logImg}
         src="/images/log-img.png"
+        alt="log-img" />
+        
+        <div className={styles.layout}>
+        <img
+        className={styles.logo}
+        src="/images/login_logo.png"
         alt="log-img" />
       <Form
         name="normal_login"
@@ -275,6 +290,7 @@ const LoginCard = ({ redirect }) => {
           )}
         </Form.Item>
       </Form>
+      </div>
     </Row>
   );
 };

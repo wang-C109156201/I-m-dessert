@@ -12,7 +12,7 @@ export default function UserInfo(props) {
       if(userInfo?.email)
          navigate("/auth/profile")
       else
-         navigate("/auth/login?redirect=/auth/profile");
+         navigate("/auth/login?redirect=/products/category");
    };
    return (
       <div onClick={goToProfile} style={{ ...props.style }} className={styles.userInfo} >
