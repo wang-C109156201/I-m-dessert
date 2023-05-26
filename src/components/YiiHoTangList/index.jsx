@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import YiiHoTangItem from "../YiiHoTangItem";
 import styles from './yiihotanglist.module.css';
 
-export default function YiiHoTangList({ yiihotang }) {
+export default function YiiHoTangList({ yiihotang, isLoading }) {
   return (
     <div className="container">
       <Col align="middle">

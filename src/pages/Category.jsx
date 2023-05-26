@@ -9,7 +9,7 @@ import MySelect from "../components/MySelect";
 import { theme } from 'antd';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useProducts } from '../react-query';
+import { useProductsByCategory } from '../react-query';
 
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
@@ -26,8 +26,8 @@ function Category() {
     token: { colorBgBase, colorTextBase },
   } = theme.useToken();
   // const sort = ['商品排序', '價錢高到低', '價錢低到高']
-
-  const { data, isLoading } = useProducts();
+  const { category } = useParams();
+  const { data, isLoading } = useProductsByCategory(category);
   const products = data || [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6},{id:7},{id:8}]; //這邊要有id才能有spinner
   
   return (

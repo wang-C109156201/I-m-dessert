@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { Drawer } from 'antd';
 import styles from './navbar.module.css';
 import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
+import { Dropdown, Space,Button, Menu,Drawer  } from 'antd';
 import UserInfoD from "../UserInfoD"
+
 export default function NavBar({ open, onClose }) {
     const items = [
         
@@ -12,18 +12,18 @@ export default function NavBar({ open, onClose }) {
             label:(<NavLink to="/products/category">全部商品</NavLink>),
           },
         {
-          key: '2',
-          label:(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
+            key: '2',
+            label:(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
         },
         {
-          key: '3',
-          label:(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
+            key: '3',
+            label:(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
         },
         {
-          key: '4',
-          label:(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
-        },
-      ];
+            key: '4',
+            label:(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
+        }
+    ];
     const NavBarContent = () => (
         <>
             <NavLink to="/"
@@ -58,7 +58,7 @@ export default function NavBar({ open, onClose }) {
             </NavLink>
         </>
     )
-
+    
     return (
         <>
             <div className={styles.navBar}>
@@ -76,11 +76,13 @@ export default function NavBar({ open, onClose }) {
                     <NavBarContent />
                     {/* <NavLink to="/"
                         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                            偶素會員
+                            hi你好
                     </NavLink> */}
+                    
                 </div>
             </Drawer>
             <div className={styles.nav}></div>
+            
         </>
 
     );
