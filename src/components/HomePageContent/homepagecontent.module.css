@@ -201,7 +201,24 @@
     padding-bottom: 2.5rem;
   
   }
-  @media (max-width: 2560px) { 
+  @media (max-width: 1965px) { 
+    .antext{
+  
+        left: 60px;
+        top: -590px;
+
+
+  
+    }
+    .estd{
+  
+        left:1080px;
+        top: -580px;
+  
+    }
+  
+  }
+  /* @media (max-width: 2560px) { 
     .antext{
   
         left: -170px;
@@ -218,7 +235,8 @@
   
     }
   
-  }
+  } */
+
   @media (max-width: 1800px) { 
     .antext{
   
