@@ -59,12 +59,12 @@
     font-weight: bold;
     margin: 0;
     font-family: SweiGothicCJKtc-Regular;
-    left: 60px;
-    top: -400px;
+    left: -140px;
+    top: -680px;
     /* background: #4D6447; */
     color: #FFFCFB;
     padding: 30px;
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing:0.2rem;
     word-spacing:1rem;
   }
@@ -73,12 +73,12 @@
     font-weight: bold;
     margin: 0;
     font-family: SweiGothicCJKtc-Regular;
-    left:810px;
-    top: -400px;
+    left:1219px;
+    top: -680px;
     /* background: #4D6447; */
     color: #FFFCFB;
     padding: 30px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing:0.2rem;
     word-spacing:1rem;
   }
