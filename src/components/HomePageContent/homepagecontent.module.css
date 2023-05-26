@@ -1,39 +1,42 @@
+
+
+
 .content {
     width: 100%;
-}
-
-.imgDispalyInDesktop {
+  }
+  
+  .imgDispalyInDesktop {
     width: 100%;
     /* background: url("/public/images/偶素甜點-home\ page-1600.png"); */
     /* margin-top:1.8rem; */
     border-top: 30px solid #4D6447;
-}
-
-.imgDispalyInMobile {
+  }
+  
+  .imgDispalyInMobile {
     width: 100%;
-}
-
-.RowCol{
+  }
+  
+  .RowCol{
     margin: 0;
     align-content:center;
     width: 100%;
-}
-
-.div {
+  }
+  
+  .div {
     width: 300px;
     height: 300px;
     /* background: #000; */
     margin: auto;
     padding: auto;
     margin-top: 100px;
-}
-
-.box {
+  }
+  
+  .box {
     color: #fff;
     line-height: 300px;
-}
-
-.title {
+  }
+  
+  .title {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -43,51 +46,51 @@
     letter-spacing: 7px;
     /* margin-bottom: 3rem; */
     /* z-index: 10000; */
-}
-
-.text{
+  }
+  
+  .text{
     /* color: #000; */
     font-weight: bold;
     margin: 0;
     
-}
-.antext{
+  }
+  .antext{
     position: absolute;
     font-weight: bold;
     margin: 0;
     font-family: SweiGothicCJKtc-Regular;
     left: 60px;
     top: -400px;
-    background: #4D6447;
+    /* background: #4D6447; */
     color: #FFFCFB;
     padding: 30px;
-    font-size: 1.2rem;
+    font-size: 5rem;
     letter-spacing:0.2rem;
     word-spacing:1rem;
-}
-.estd{
+  }
+  .estd{
     position: absolute;
     font-weight: bold;
     margin: 0;
     font-family: SweiGothicCJKtc-Regular;
     left:810px;
     top: -400px;
-    background: #4D6447;
+    /* background: #4D6447; */
     color: #FFFCFB;
     padding: 30px;
     font-size: 1.2rem;
     letter-spacing:0.2rem;
     word-spacing:1rem;
-}
-
-
-.btn{
+  }
+  
+  
+  .btn{
     background-color: #F9CBB7;
     color: #4D6447;
     font-weight: bold;
-}
-
- .btnstyle {
+  }
+  
+  .btnstyle {
     border: none !important;
     height: 30px !important;
     width: 30px !important;
@@ -103,9 +106,9 @@
     transform: translateY(-50%) !important;
     opacity: 0.6 !important;
     margin: 1rem;
- }
-
- .nsbtnstyle {
+  }
+  
+  .nsbtnstyle {
     border: none !important;
     height: 30px !important;
     width: 30px !important;
@@ -121,74 +124,74 @@
     transform: translateY(-50%) !important;
     opacity: 0.6 !important;
     margin: 1rem;
- }
-
-.boxstyle{
+  }
+  
+  .boxstyle{
     display: flex;
     flex-direction: column;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-}
-
-.NewsTextBox{
+  }
+  
+  .NewsTextBox{
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
     justify-content: space-between;
     align-items: center;
-}
-.ClNewsTextBox{
+  }
+  .ClNewsTextBox{
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
     justify-content: space-around;
     align-items: center;
-}
-
-/* .btn:active {
+  }
+  
+  /* .btn:active {
     background-color: #F9CBB7;
     color: #4D6447;
     font-weight: bold;
     border-color: #4D6447;
-} */
-
-.contentStyle {
+  } */
+  
+  .contentStyle {
     height: 160px;
     /* color: #fff; */
     line-height: 160px;
     text-align: center;
     /* background: #364d79; */
-}
-
-.Carousel {
+  }
+  
+  .Carousel {
     width: 100%;
     height: auto;
-}
-
-.news {
+  }
+  
+  .news {
     width: 70%;
     /* display: none !important; */
     /* margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 3rem; */
-}
-
-.ns {
+  }
+  
+  .ns {
     width: 100%;
     
-}
-
-.newsbox {
+  }
+  
+  .newsbox {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-.cl {
+  }
+  .cl {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,45 +199,152 @@
     margin-right: 0;
     margin-left: 0;
     padding-bottom: 2.5rem;
-
-}
-
-@media (min-width: 1440px) { 
+  
+  }
+  @media (max-width: 2560px) { 
     .antext{
- 
+  
+        left: -170px;
+        top: -750px;
+        font-size:2.4rem;
+    
+  
+    }
+    .estd{
+  
+        left:1200px;
+        top: -750px;
+        font-size: 2.4rem;
+  
+    }
+  
+  }
+  @media (max-width: 1800px) { 
+    .antext{
+  
+        left: 60px;
+        top: -540px;
+        font-size: 1.6rem;
+    
+  
+    }
+    .estd{
+  
+        left:1080px;
+        top: -540px;
+        font-size: 1.6rem;
+  
+    }
+  
+  }
+  @media (max-width: 1440px) { 
+    .antext{
+  
         left: 4px;
         top: -450px;
     
-
+  
     }
     .estd{
   
         left:880px;
         top: -450px;
-
+  
     }
-
-}
-@media (max-width: 1024px) { /*>786px*/
-
+  
+  }
+  @media (max-width: 1280px) { 
     .antext{
- 
+  
+        left: 4px;
+        top: -430px;
+        font-size: 1.3rem;
+    
+  
+    }
+    .estd{
+  
+        left:810px;
+        top: -430px;
+        font-size: 1.3rem;
+  
+    }
+  
+  }
+  @media (max-width: 1200px) { 
+    .antext{
+  
+        left: 20px;
+        top: -430px;
+        font-size: 1.2rem;
+    
+  
+    }
+    .estd{
+  
+        left:810px;
+        top: -430px;
+        font-size: 1.2rem;
+  
+    }
+  
+  }
+  @media (max-width: 1100px) { 
+    .antext{
+  
+        left: 4px;
+        top: -410px;
+        font-size: 1rem;
+    
+  
+    }
+    .estd{
+  
+        left:680px;
+        top: -410px;
+        font-size: 1rem;
+  
+    }
+  
+  }
+  @media (max-width: 1024px) { /*>786px*/
+  
+    .antext{
+  
         left: 50px;
         top: -360px;
         font-size: 0.8rem;
-
+  
     }
     .estd{
   
         left:700px;
         top: -360px;
         font-size: 0.8rem;
-
+  
     }
-
-}
-
-@media (min-width: 769px) { /*>786px*/
+  
+  }
+  @media (max-width: 960px) { /*>786px*/
+  
+    .antext{
+  
+        left: -45px;
+        top: -360px;
+        font-size: 0.8rem;
+  
+    }
+    .estd{
+  
+        left:500px;
+        top: -360px;
+        font-size: 0.8rem;
+  
+    }
+  
+  }
+  
+  @media (min-width: 769px) { /*>786px*/
     .imgDispalyInMobile {
         display: none;
     }
@@ -242,24 +352,24 @@
         display: none ;
     }
   
-}
-
-
-@media (max-width: 768px) { /*<786px*/
+  }
+  
+  
+  @media (max-width: 768px) { /*<786px*/
     /* .news {
         display: none ;
     } */
     .imgDispalyInDesktop {
         display: none;
     }
-
+  
     .imgDispalyInMobile {
         /* height: 63%; */
         /*這個我先暫時註解*/
         /*要修圖片*/
         width: 100%;
     }
-
+  
     /* .carousel {
         display: none!important;
     } */
@@ -271,11 +381,11 @@
         justify-content: center;
         margin: 1rem;
     }
-
+  
     .newsbox {
         display: none;
     }
-
+  
     .cl {
         display: flex;
         align-content: center !important;
@@ -285,17 +395,17 @@
         margin-left: 0 !important;
         padding-bottom: 2.5rem;
     }
-
-}
-
-@media (max-width: 576px) {
+  
+  }
+  
+  @media (max-width: 576px) {
     .imgDispalyInDesktop {
         display: none;
     }
-
+  
     /* .news {
         width: 85%;
-
+  
     } */
-
-}
+  
+  }
