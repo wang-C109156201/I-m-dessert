@@ -2,6 +2,7 @@
     {
         "id": "y1",
         "category": "一禾堂",
+        "sort":"cookie",
         "name": "香草籽豆乳餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-1.png",
@@ -17,6 +18,7 @@
     {
         "id": "y2",
         "category": "一禾堂",
+        "sort":"cookie",
         "name": "椰子蔓越莓餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-2.png",
@@ -32,7 +34,8 @@
     {
         "id": "y3",
         "category": "一禾堂",
-        "name": "藍莓可可麥片餅乾",
+        "sort":"cookie",
+        "name": "藍莓可可大麥片餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-3.png",
         "img1": "/images/一禾堂/c3-1.png",
@@ -47,6 +50,7 @@
     {
         "id": "y4",
         "category": "一禾堂",
+        "sort":"cookie",
         "name": "巧克熊貝兒餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-4.png",
@@ -62,6 +66,7 @@
     {
         "id": "y5",
         "category": "一禾堂",
+        "sort":"cookie",
         "name": "杏仁瓦片小餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-5.png",
@@ -77,7 +82,8 @@
     {
         "id": "y6",
         "category": "一禾堂",
-        "name": "糙米核果穀物餅乾",
+        "sort":"cookie",
+        "name": "糙米核果穀物脆餅乾",
         "price": 120,
         "image": "/images/一禾堂/cookie-6.png",
         "img1": "/images/一禾堂/c6-1.png",
@@ -93,6 +99,7 @@
         "id": "y7",
         "category": "一禾堂",
         "name": "香檸鳳梨米旦糕",
+        "sort":"cake",
         "price": 850,
         "image": "/images/一禾堂/cake-2.png",
         "img1": "/images/一禾堂/ca2-1.png",
@@ -107,6 +114,7 @@
     {
         "id": "y8",
         "category": "一禾堂",
+        "sort":"cake",
         "name": "提拉米蘇",
         "price": 880,
         "image": "/images/一禾堂/cake-1.png",
@@ -122,6 +130,7 @@
     {
         "id": "y9",
         "category": "一禾堂",
+        "sort":"bread",
         "name": "原味豆乳貝果",
         "price": 35,
         "image": "/images/一禾堂/bread-1.png",
@@ -137,6 +146,7 @@
     {
         "id": "y10",
         "category": "一禾堂",
+        "sort":"bread",
         "name": "豆乳起司貝果",
         "price": 45,
         "image": "/images/一禾堂/bread-2.png",
@@ -152,6 +162,7 @@
     {
         "id": "y11",
         "category": "一禾堂",
+        "sort":"bread",
         "name": " 野生藍莓貝果",
         "price": 40,
         "image": "/images/一禾堂/bread-3.png",
@@ -167,6 +178,7 @@
     {
         "id": "y12",
         "category": "一禾堂",
+        "sort":"bread",
         "name": " 豆乳芋頭",
         "price": 40,
         "image": "/images/一禾堂/bread-4.png",
@@ -182,6 +194,7 @@
     {
         "id": "g1",
         "category": "綠帶純植物烘焙",
+        "sort":"cake",
         "name": "栗子蒙布朗旦糕",
         "price": 980,
         "image": "/images/綠帶/cake-1.png",
@@ -198,6 +211,7 @@
     {
         "id": "g2",
         "category": "綠帶純植物烘焙",
+        "sort":"cake",
         "name": "栗子愛觀音旦糕",
         "price": 1280,
         "image": "/images/綠帶/cake-3.png",
@@ -213,6 +227,7 @@
     {
         "id": "g3",
         "category": "綠帶純植物烘焙",
+        "sort":"cake",
         "name": "抹茶提拉米蘇",
         "price": 780,
         "image": "/images/綠帶/cake-4.png",
@@ -228,6 +243,7 @@
     {
         "id": "g4",
         "category": "綠帶純植物烘焙",
+        "sort":"cake",
         "name": "檸檬夏雪奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-5.png",
@@ -243,6 +259,7 @@
     {
         "id": "g5",
         "category": "綠帶純植物烘焙",
+        "sort":"cake",
         "name": "芭蕾圓舞曲奇思",
         "price": 1080,
         "image": "/images/綠帶/cake-2.png",
@@ -258,6 +275,7 @@
     {
         "id": "g6",
         "category": "綠帶純植物烘焙",
+        "sort":"cookie",
         "name": "梅子雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-1.png",
@@ -273,6 +291,7 @@
     {
         "id": "g7",
         "category": "綠帶純植物烘焙",
+        "sort":"cookie",
         "name": "花椒巧克力雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-2.png",
@@ -288,6 +307,7 @@
     {
         "id": "g8",
         "category": "綠帶純植物烘焙",
+        "sort":"cookie",
         "name": "抹茶綠藻雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-3.png",
@@ -303,6 +323,7 @@
     {
         "id": "g9",
         "category": "綠帶純植物烘焙",
+        "sort":"cookie",
         "name": "微笑原味雪球",
         "price": 180,
         "image": "/images/綠帶/cookie-4.png",
@@ -318,6 +339,7 @@
     {
         "id": "g10",
         "category": "綠帶純植物烘焙",
+        "sort":"bread",
         "name": "蔓越莓司康抹醬組",
         "price": 490,
         "image": "/images/綠帶/scone-1.png",
@@ -333,6 +355,7 @@
     {
         "id": "g11",
         "category": "綠帶純植物烘焙",
+        "sort":"bread",
         "name": "薰衣草司康抹醬組",
         "price": 490,
         "image": "/images/綠帶/scone-2.png",
@@ -348,6 +371,7 @@
     {
         "id": "g12",
         "category": "綠帶純植物烘焙",
+        "sort":"bread",
         "name": "原味司康抹醬組",
         "price": 460,
         "image": "/images/綠帶/scone-3.png",
@@ -363,6 +387,7 @@
     {
         "id": "h1",
         "category": "嬉皮麵包",
+        "sort":"cake",
         "name": "烏龍茶巴斯克蛋糕",
         "price": 980,
         "image": "/images/嬉皮/cake-1.png",
@@ -379,6 +404,7 @@
     {
         "id": "h2",
         "category": "嬉皮麵包",
+        "sort":"cake",
         "name": "巧克力慕斯蛋糕",
         "price": 700,
         "image": "/images/嬉皮/cake-2.png",
@@ -394,6 +420,7 @@
     {
         "id": "h3",
         "category": "嬉皮麵包",
+        "sort":"cake",
         "name": "草莓芙蓮蛋糕",
         "price": 1000,
         "image": "/images/嬉皮/cake-3.png",
@@ -409,6 +436,7 @@
     {
         "id": "h4",
         "category": "嬉皮麵包",
+        "sort":"cake",
         "name": "鐵觀音提拉米蘇",
         "price": 990,
         "image": "/images/嬉皮/cake-4.png",
@@ -424,6 +452,7 @@
     {
         "id": "h5",
         "category": "嬉皮麵包",
+        "sort":"bread",
         "name": "草莓轉圈圈",
         "price": 116,
         "image": "/images/嬉皮/bread-1.png",
@@ -439,6 +468,7 @@
     {
         "id": "h6",
         "category": "嬉皮麵包",
+        "sort":"bread",
         "name": "社長咖哩麵包",
         "price": 120,
         "image": "/images/嬉皮/bread-2.png",
@@ -454,6 +484,7 @@
     {
         "id": "h7",
         "category": "嬉皮麵包",
+        "sort":"bread",
         "name": "黑胡椒豆腐捲捲",
         "price": 150,
         "image": "/images/嬉皮/bread-3.png",
@@ -469,6 +500,7 @@
     {
         "id": "h8",
         "category": "嬉皮麵包",
+        "sort":"bread",
         "name": "花生夾心",
         "price": 135,
         "image": "/images/嬉皮/bread-4.png",
@@ -484,6 +516,7 @@
     {
         "id": "h9",
         "category": "嬉皮麵包",
+        "sort":"bread",
         "name": "綠茶小茉莉(藍莓) ",
         "price": 120,
         "image": "/images/嬉皮/bread-5.png",
@@ -499,6 +532,7 @@
     {
         "id": "h10",
         "category": "嬉皮麵包",
+        "sort":"scone",
         "name": "伯爵奶茶司康",
         "price": 275,
         "image": "/images/嬉皮/scone-1.png",

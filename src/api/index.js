@@ -11,8 +11,8 @@ import {
   query,
   where,
   initializeFirestore,
+  writeBatch
 } from "firebase/firestore";
-
 import { 
   getAuth, signInWithEmailAndPassword, 
   createUserWithEmailAndPassword,
@@ -65,15 +65,22 @@ export const getProductById = async ({ queryKey }) => {
 };
 
 export const getProductsByCategory = async (category) => {
-   // Create a query against the collection.
-   const q = await query(productsCollection, where("category", "==", category.toUpperCase()));
-   const querySnapshot = await getDocs(q);
-   // Convert query to a json array.
-   let result = [];
-   querySnapshot.forEach(async (product) => {
-      await result.push(product.data());
-   });
-   return result;
+  try {
+    const productsRef = collection(db, "products");
+    const categoryQuery = query(productsRef, where("category", "==", category));
+    const querySnapshot = await getDocs(categoryQuery);
+
+    const products = [];
+    querySnapshot.forEach((doc) => {
+      const product = doc.data();
+      products.push(product);
+    });
+
+    return products;
+  } catch (error) {
+    console.error("Error getting products by category:", error);
+    return [];
+  }
 };
 
 export const getProducts = async () => {
@@ -85,6 +92,17 @@ export const getProducts = async () => {
    });
    return result;
 };
+ 
+export const updateProductInFirestore = async (productId, updatedData) => {
+  try {
+    const productRef = doc(db, "products", productId);
+    await updateDoc(productRef, updatedData);
+    console.log("Product updated in Firestore successfully");
+  } catch (error) {
+    console.error("Error updating product in Firestore:", error);
+  }
+};
+
 
 export const getUserInfo = async () => {
   const storedUser = localStorage.getItem("user");

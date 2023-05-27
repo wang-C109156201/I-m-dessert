@@ -5,6 +5,7 @@ import {
   getProductById, 
   getProducts, 
   getProductsByCategory,
+  updateProductInFirestore,
   login,
   register,
   getUserInfo,
@@ -19,6 +20,7 @@ export const useProducts = () => {
    return { data, isLoading };
  };
  
+ 
  export const useProductsByCategory = (category) => {
     const { data, isLoading } = useQuery([category], getProductsByCategory);
     return { data, isLoading };
@@ -26,6 +28,11 @@ export const useProducts = () => {
  
   export const useProductById = (productId) => {
     const { data, isLoading } = useQuery([productId], getProductById);
+    return { data, isLoading };
+  };
+
+  export const updateProducts = (productId) => {
+    const { data, isLoading } = useQuery([productId], updateProductInFirestore);
     return { data, isLoading };
   };
 
