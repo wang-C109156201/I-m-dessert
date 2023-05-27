@@ -10,8 +10,8 @@ import MySelect from '../components/MySelect';
 import { theme } from 'antd';
 import _ from 'lodash';
 import { useLocation } from "react-router-dom";
-import { useProductsByCategory, updateProducts } from '../react-query';
-
+import { useProductsByCategory } from '../react-query';
+import { updateProductInFirestore} from '../api'; // Assuming updateProducts is an API function
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
 
@@ -38,13 +38,11 @@ function Store() {
 
     useEffect(() => {
       const updateData = async () => {
-        const { data } = await updateProducts();
-        if (data) {
-          setProducts(data);
-        }
+        const updatedProducts = await updateProductInFirestore(sort);
+        setProducts(updatedProducts);
       };
       updateData();
-    }, []);
+    }, [sort]);
     
   return (
 

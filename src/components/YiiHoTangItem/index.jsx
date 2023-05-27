@@ -10,7 +10,7 @@ export default function YiiHoTangItem({ yiihotang}) {
       <div>         
          <div className={styles.item}>
             <div className={styles.img}>
-               <Link to={`/products/id/${yiihotang.id}`}>
+               <Link to={`/products/${yiihotang.sort}/id/${yiihotang.id}`}>
                   <img
                      style={{ width: '100%'}}
                      src={yiihotang.image}

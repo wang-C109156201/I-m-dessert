@@ -29,15 +29,17 @@ function Router() {
               <Route path="category" element={<Category />} />
               <Route path="id/:productId" element={<Product />} />
             </Route>
+            <Route path="products/:sort">
+              <Route path="id/:productId" element={<ProductLocal />} />
+            </Route>
             <Route path="store">
               <Route path="store" element={<Store/>} />
               <Route path="store1/:sort" element={<Store />} />
             </Route>
             <Route path="store2">
               <Route path="hippun" element={< Store2/>} />
-
-              {/* <Route path="hippun2/:sort" element={< Store2/>} /> */}
-              <Route path="id/:productId" element={<ProductLocal />} />
+              <Route path="hippun2/:sort" element={< Store2/>} />
+              {/* <Route path="id/:productId" element={<ProductLocal />} /> */}
             </Route>
             <Route path="store3">
               <Route path="yiihotang" element={< Store3/>} />

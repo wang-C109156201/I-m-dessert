@@ -50,22 +50,6 @@ export default function StoreContent() {
                 to="/store/store1/bread">
                 麵包
             </MotionNavLink>
-            {/* <NavLink to="/store/store"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                全部
-            </NavLink>
-            <NavLink to="/store/store1/cookie"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                餅乾
-            </NavLink>
-            <NavLink to="/store/store1/cake"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                蛋糕
-            </NavLink>
-            <NavLink to="/store/store1/bread"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                麵包
-            </NavLink> */}
             </motion.ul>
     )
     
