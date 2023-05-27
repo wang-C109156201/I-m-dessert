@@ -1,28 +1,74 @@
 import styles from './storecontent3.module.css';
 import { Row, Col } from "antd";
 import { NavLink } from 'react-router-dom';
-// import MySelect from '../MySelect';
+import { useState } from 'react';
+import { motion } from "framer-motion";
+import { Grid } from 'antd';
+const { useBreakpoint } = Grid;
+import MotionNavLink from '../MotionNavLink';
 
 export default function StoreContent3() {
-    const NavBarContent = () => (
-        <>
-            <NavLink to="/store3/yiihotang"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+    const [selected, setSelected] = useState(0);
+    const { md } = useBreakpoint();
+
+    const navAnimation = {
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: .4,
+                delayChildren: 1,
+            }
+        }
+    }  
+    const NavBarContent = (props) => (
+        <motion.ul {...props} style={{ listStyleType: 'none'}}>
+        <MotionNavLink
+                onClick={() => setSelected(0)}
+                id={0}
+                selected={selected}
+                to="/store3/yiihotang">
                 全部
-            </NavLink>
-            <NavLink to="/store3/yiihotang3/bread"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-               麵包
-            </NavLink>
-            <NavLink to="/store3/yiihotang3/cake"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+            </MotionNavLink>
+            <MotionNavLink
+                onClick={() => setSelected(1)}
+                id={1}
+                selected={selected}
+                to="/store3/yiihotang3/bread">
+                麵包
+            </MotionNavLink>
+            <MotionNavLink
+                onClick={() => setSelected(2)}
+                id={2}
+                selected={selected}
+                to="/store3/yiihotang3/cake">
                 蛋糕
-            </NavLink>
-            <NavLink to="/store3/yiihotang3/cookie"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                餅乾
-            </NavLink>
-        </>
+            </MotionNavLink>
+            <MotionNavLink
+                onClick={() => setSelected(3)}
+                id={3}
+                selected={selected}
+                to="/store3/yiihotang3/cookie">
+                司康
+            </MotionNavLink>
+            </motion.ul>
+        // <>
+        //     <NavLink to="/store3/yiihotang"
+        //         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+        //         全部
+        //     </NavLink>
+        //     <NavLink to="/store3/yiihotang3/bread"
+        //         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+        //        麵包
+        //     </NavLink>
+        //     <NavLink to="/store3/yiihotang3/cake"
+        //         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+        //         蛋糕
+        //     </NavLink>
+        //     <NavLink to="/store3/yiihotang3/cookie"
+        //         className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
+        //         餅乾
+        //     </NavLink>
+        // </>
     )
     
     return (
@@ -36,7 +82,7 @@ export default function StoreContent3() {
                             </NavLink>
                         </div>
                         <div className={styles.NavBar}>
-                            <NavBarContent />
+                            <NavBarContent className={styles.NavBar}/>
                         </div>
                         
                         {/* <div className={styles.SelectBox}>

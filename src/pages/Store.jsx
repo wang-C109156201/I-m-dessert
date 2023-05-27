@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { Helmet } from "react-helmet-async"
 import Header from "../components/Header"
@@ -9,9 +8,9 @@ import StoreContent from '../components/StoreContent';
 import MySelect from '../components/MySelect';
 import { theme } from 'antd';
 import _ from 'lodash';
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useProductsByCategory } from '../react-query';
-import { updateProductInFirestore} from '../api'; // Assuming updateProducts is an API function
+
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
 
@@ -26,24 +25,15 @@ function Store() {
     const {
         token: { colorBgBase, colorTextBase },
     } = theme.useToken();
-    const { sort } = useParams();
-    const normalizedSort = typeof sort === 'string' ? sort.toUpperCase() : '';
-    const _greenbakery = !normalizedSort
-      ? greenbakery
-      : greenbakery.filter(x => typeof x.sort === 'string' && x.sort.toUpperCase() === normalizedSort);
-    // const title = _.startCase(categoryName);
-    // const { categoryName } = useParams();
-    const { data, isLoading } = useProductsByCategory(sort);
-    const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-      const updateData = async () => {
-        const updatedProducts = await updateProductInFirestore(sort);
-        setProducts(updatedProducts);
-      };
-      updateData();
-    }, [sort]);
-    
+    const { sort } = useParams();
+    const _greenbakery = !sort
+        ? greenbakery
+        :greenbakery.filter(
+            x => x?.sort.toUpperCase() === sort.toUpperCase()
+        );
+    // const title = _.startCase(categoryName);
+
   return (
 
     <div className="maincontainer mainLayout">
@@ -62,7 +52,7 @@ function Store() {
       />
       <StoreContent/>
       <MySelect/>         
-      <GreenBakeryList products={products} isLoading={isLoading} className="layoutContent" />
+      <GreenBakeryList greenbakery={_greenbakery} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>
   );

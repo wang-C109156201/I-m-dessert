@@ -10,7 +10,7 @@ export default function GreenBakeryItem({ greenbakery}) {
       <div>         
          <div className={styles.item}>
             <div className={styles.img}>
-               <Link to={`/products/id/${greenbakery.id}`}>
+               <Link to={`/products/${greenbakery.sort}/id/${greenbakery.id}`}>
                   <img
                      style={{ width: '100%'}}
                      src={greenbakery.image}

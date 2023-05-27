@@ -1,42 +1,55 @@
 import styles from './storecontent2.module.css';
 import { Row, Col } from "antd";
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import { motion } from "framer-motion";
 import { Grid } from 'antd';
 const { useBreakpoint } = Grid;
 import MotionNavLink from '../MotionNavLink';
-// import MySelect from '../MySelect';
 
 export default function StoreContent2() {
+
+    const [selected, setSelected] = useState(0);
+    const { md } = useBreakpoint();
+
+    const navAnimation = {
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: .4,
+                delayChildren: 1,
+            }
+        }
+    }  
     const NavBarContent = (props) => (
         <motion.ul {...props} style={{ listStyleType: 'none'}}>
         <MotionNavLink
                 onClick={() => setSelected(0)}
                 id={0}
                 selected={selected}
-                to="/store/store">
+                to="/store2/hippun">
                 全部
             </MotionNavLink>
             <MotionNavLink
                 onClick={() => setSelected(1)}
                 id={1}
                 selected={selected}
-                to="/store/store1/cookie">
-                餅乾
+                to="/store2/hippun2/bread">
+                麵包
             </MotionNavLink>
             <MotionNavLink
                 onClick={() => setSelected(2)}
                 id={2}
                 selected={selected}
-                to="/store/store1/cake">
+                to="/store2/hippun2/cake">
                 蛋糕
             </MotionNavLink>
             <MotionNavLink
                 onClick={() => setSelected(3)}
                 id={3}
                 selected={selected}
-                to="/store/store1/bread">
-                麵包
+                to="/store2/hippun2/scone">
+                司康
             </MotionNavLink>
             </motion.ul>
     )
@@ -72,7 +85,7 @@ export default function StoreContent2() {
                             </NavLink>
                         </div>
                         <div className={styles.NavBar}>
-                            <NavBarContent />
+                            <NavBarContent className={styles.NavBar}/>
                         </div>
                         
                         {/* <div className={styles.SelectBox}>
