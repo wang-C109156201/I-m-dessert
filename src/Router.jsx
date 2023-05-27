@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import Home from './pages/Home'
 import Category from './pages/Category';
 import Product from './pages/Product';
+import ProductLocal from './pages/ProductLocal';
 import Store from './pages/Store';
 import Store2 from './pages/Store2';
 import Store3 from './pages/Store3';
@@ -34,7 +35,9 @@ function Router() {
             </Route>
             <Route path="store2">
               <Route path="hippun" element={< Store2/>} />
-              <Route path="hippun2/:sort" element={< Store2/>} />
+
+              {/* <Route path="hippun2/:sort" element={< Store2/>} /> */}
+              <Route path="id/:productId" element={<ProductLocal />} />
             </Route>
             <Route path="store3">
               <Route path="yiihotang" element={< Store3/>} />

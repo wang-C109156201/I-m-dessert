@@ -1,29 +1,33 @@
+import { useState,useEffect } from "react";
 import { NavLink } from 'react-router-dom';
+import { Dropdown, Space,Button, Menu,Drawer,Divider,  } from 'antd';
 import styles from './navbar.module.css';
-import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, Space,Button, Menu,Drawer  } from 'antd';
+import { MailOutlined, SettingOutlined } from '@ant-design/icons';
 import UserInfoD from "../UserInfoD"
 
+function getItem(label, key,  children) {
+    return {
+      key,
+      children,
+      label,
+    };
+  }
+  
 export default function NavBar({ open, onClose }) {
     const items = [
-        
-        {
-            key: '1',
-            label:(<NavLink to="/products/category">全部商品</NavLink>),
-          },
-        {
-            key: '2',
-            label:(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
-        },
-        {
-            key: '3',
-            label:(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
-        },
-        {
-            key: '4',
-            label:(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
-        }
+        getItem(<NavLink to="/">首頁</NavLink>, '1'),
+        getItem('最新消息', '2'),
+        getItem('品牌介紹', '3'),
+        getItem('偶素商品', 'sub1', [
+            getItem(<NavLink to="/products/category">全部商品</NavLink>),
+            getItem(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
+            getItem(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
+            getItem(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
+        ]),
+        getItem('聯絡我們', '8'),
     ];
+      
+     
     const NavBarContent = () => (
         <>
             <NavLink to="/"
@@ -38,11 +42,11 @@ export default function NavBar({ open, onClose }) {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 品牌介紹
             </NavLink>
-            <NavLink to="/products/category"
+            <NavLink to="/"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 <Dropdown
                     menu={{
-                    items,
+                        items:dropdownItems,
                     }}
                     trigger={['hover']}
                     placement="bottomLeft"
@@ -58,12 +62,30 @@ export default function NavBar({ open, onClose }) {
             </NavLink>
         </>
     )
-    
+    // const [isTransparent, setIsTransparent] = useState(true); // 初始化為透明
+
+    // useEffect(() => {
+    //   window.addEventListener('scroll', handleScroll);
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
+  
+    // const handleScroll = () => {
+    //   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    //   setIsTransparent(scrollTop >= 400); // 滾動到 500px 時設置為非透明
+    // };
+
+    const [mode, setMode] = useState('inline');
+    const [theme, setTheme] = useState('light');
+    const dropdownItems = items.find(item => item.key === 'sub1').children; // 提取 sub1 的內容
+
     return (
         <>
             <div className={styles.navBar}>
                 <NavBarContent />
             </div>
+           
             <Drawer
                 title="偶素甜點"
                 placement="left"
@@ -71,18 +93,22 @@ export default function NavBar({ open, onClose }) {
                 open={open}
                 width={250}
             >
+                <UserInfoD className={styles.user}/>
                 <div className={styles.drawer}>
-                    <UserInfoD/>
-                    <NavBarContent />
-                    {/* <NavLink to="/"
-                        className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                            hi你好
-                    </NavLink> */}
-                    
+                    {/* <NavBarContent /> */}
+                    <Menu
+                        style={{
+                            width:210,
+                            }}
+                        defaultSelectedKeys={['1']}
+                        defaultOpenKeys={['sub1']}
+                        mode={mode}
+                        theme={theme}
+                        items={items} // Replace `children` with `items`
+                    />
                 </div>
             </Drawer>
             <div className={styles.nav}></div>
-            
         </>
 
     );

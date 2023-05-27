@@ -19,7 +19,22 @@ const darkTheme = {
     Switch: {
       colorPrimary: "#F9CBB7;",
       colorPrimaryHover: "#323721",
-    }
+    },
+    Menu: {
+      colorItemBg: "#4D6447",
+      colorItemBgSelected: "#96AB90;",
+      colorItemText: "#96AB90",
+      colorItemTextSelected: "#4D6447",
+      // colorSubItemBg:"#f9cbb744",
+      colorSubItemBgSelected:"#F9CBB7",
+      colorSplit:"#4D6447",
+    },
+    Drawer:{
+      colorBgElevated:"#4D6447",
+    },
+    Modal:{
+      colorBgElevated: "#4D6447",
+    },
   },
 };
 
@@ -39,7 +54,19 @@ const lightTheme = {
     Switch: {
       colorPrimary: "#F9CBB7;",
       colorPrimaryHover: "#323721",
-    }
+    },
+    Menu: {
+      colorItemBgSelected: "#F9CBB7;",
+      colorItemText: "#4D6447",
+      colorItemTextSelected: "#FFFCFB",
+      colorSubItemBg:"#f9cbb744",
+      colorSubItemBgSelected:"#F9CBB7",
+      colorSplit:"#fff",
+    },
+    // Modal:{
+    //   colorBgElevated: "#323721",
+    // },
+    
   },
 };
 

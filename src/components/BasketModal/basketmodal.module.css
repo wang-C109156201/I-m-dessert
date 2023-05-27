@@ -14,10 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F9CBB7 !important;
+    background: #96AB90 !important;
   }
   .btn:hover {
-    background: #4D6447 !important;
+    background: #F9CBB7 !important;
   }
   
   .item {

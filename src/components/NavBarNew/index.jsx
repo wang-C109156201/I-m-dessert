@@ -15,7 +15,7 @@ function getItem(label, key,  children) {
   
 export default function NavBar({ open, onClose }) {
     const items = [
-        getItem('首頁', '1'),
+        getItem(<NavLink to="/">首頁</NavLink>, '1'),
         getItem('最新消息', '2'),
         getItem('品牌介紹', '3'),
         getItem('偶素商品', 'sub1', [
@@ -24,7 +24,7 @@ export default function NavBar({ open, onClose }) {
             getItem(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
             getItem(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
         ]),
-        getItem('品牌介紹', '8'),
+        getItem('聯絡我們', '8'),
     ];
       
      

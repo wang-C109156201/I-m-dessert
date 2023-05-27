@@ -10,7 +10,7 @@ export default function HippunItem({ hippun}) {
       <div>         
          <div className={styles.item}>
             <div className={styles.img}>
-               <Link to={`/products/id/${hippun.id}`}>
+               <Link to={`/store2/id/${hippun.id}`}>
                   <img
                      style={{ width: '100%'}}
                      src={hippun.image}
