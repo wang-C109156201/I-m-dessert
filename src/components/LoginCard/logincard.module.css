@@ -43,7 +43,7 @@
 
 .loginForm {
   padding: 1rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   margin-right: auto;
   max-width: 20rem;
   /* margin-top: 5.5rem; */
@@ -66,7 +66,8 @@
   /* width: 55%;
   height: 55%; */
   /* margin-top: 10rem; */
-  height: 100vh;
+  height: 100%;
+  margin-right: 5rem;
 }
 .logo{
   width: 15%;
@@ -131,23 +132,84 @@
   margin-top: 0;
   font-size: 0.5rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 2560px) {
 
   .logImg {
-    height: 90vh;
+    width:60%;
+    margin-right: 25rem;
+  }
+} 
+@media (max-width:1960px) {
+
+  .logImg {
+    width: 60%;
+    margin-right: 15rem;
   }
 
 } 
+@media (max-width:1920px) {
+
+  .logImg {
+    width: 70%;
+    margin-right: 10rem;
+  }
+
+} 
+@media (max-width: 1680px) {
+
+  .logImg {
+    width: 76%;
+    margin-right: 4.5rem;
+  }
+
+} 
+
+@media (max-width: 1440px) {
+
+  .logImg {
+    width: 75%;
+    margin-right: 3rem;
+  }
+
+} 
+@media (max-width: 1280px) {
+
+  .logImg {
+    width: 55%;
+    margin-right: 10rem;
+  }
+
+} 
+@media (max-width: 1150px) {
+
+  .logImg {
+    width: 60%;
+    margin-right: 5rem;
+  }
+
+}
 
 @media (max-width: 1024px) {
 
   .logImg {
-    height: 70vh;
+    width: 65%;
+    margin-right: 3rem;
   }
 
 } 
+/* @media (max-width: 800px) {
 
-@media (max-width: 768px) {
+  .logo{
+    display: block;
+    margin-top: 5rem;
+  }
+  .logImg {
+    display: none;
+  }
+
+}  */
+
+@media (max-width: 960px) {
 .logo{
   display: block;
   margin-top: 5rem;
