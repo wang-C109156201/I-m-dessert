@@ -139,14 +139,6 @@
     margin-right: 25rem;
   }
 } 
-@media (max-width:1920px) {
-
-  .logImg {
-    width: 60%;
-    margin-right: 15rem;
-  }
-
-} 
 @media (max-width:1960px) {
 
   .logImg {
@@ -155,6 +147,15 @@
   }
 
 } 
+@media (max-width:1920px) {
+
+  .logImg {
+    width: 70%;
+    margin-right: 10rem;
+  }
+
+} 
+
 @media (max-width: 1440px) {
 
   .logImg {
