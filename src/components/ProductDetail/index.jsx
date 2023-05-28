@@ -139,8 +139,8 @@ function ProductDetail({ product, isLoading }) {
                         <div className={styles.select}>
                            <p className={styles.text}>數量 {"   "}</p>
                            <Select
-                              defaultValue={qty}
-                              key={qty}
+                              defaultValue={initQty}
+                              key={initQty}
                               className={styles.selectStyle}
                               onChange={val => setQty(val)}
                            >

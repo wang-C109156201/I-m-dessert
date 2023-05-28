@@ -32,24 +32,7 @@ export default function HomePageContent({ title }) {
             }
         }
     }
-    // const explainProduct = {
-    //     hidden: { opacity: 0 },
-    //     show: {
-    //         opacity: 1,
-    //         transition: {
-    //             // delay: 5,
-    //             staggerChildren: 0.2,
-    //         }
-    //     }
-    // }
-    // const contentStyle = {
-    //     margin: 0,
-    //     height: '160px',
-    //     color: '#fff',
-    //     lineHeight: '160px',
-    //     textAlign: 'center',
-    //     background: '#364d79',
-    // };
+    
     return (
         <div className={styles.content}>
             <img className={styles.imgDispalyInDesktop} src="/images/偶素甜點-home page-1600.png" alt="logo" />

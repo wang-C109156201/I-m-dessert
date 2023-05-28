@@ -32,7 +32,7 @@ export default function HotListR() {
                      </div>
                   </div>
                   <div data-aos="fade-left" className={styles.img}>
-                     <Link to={`/products/id/y1`}>
+                     <Link to={`products/id/aHl9hert4W9suXK8ZKfh`}>
                         <img
                            className={styles.img_width}
                            src="/images/一禾堂-1.png"

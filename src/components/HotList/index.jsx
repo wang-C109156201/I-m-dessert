@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import React,{useEffect} from "react";
 import { Link } from 'react-router-dom';
 
-export default function HotList(product) {
+export default function HotList() {
    useEffect(() => {
       Aos.init({duration: 2000});
    }, []);
@@ -16,7 +16,7 @@ export default function HotList(product) {
             <div className={styles.Row}>
                <div className={styles.item}>
                   <div data-aos="fade-right" className={styles.img}>
-                  <Link to={`/products/id/g1`}>
+                  <Link to={`/products/id/4d2ZhLV6SqE3oAompudH`}>
                         <img
                            className={styles.img_width}
                            src="/images/綠帶純植物烘培-1.png"
@@ -49,7 +49,7 @@ export default function HotList(product) {
             <div className={styles.Row}>
                <div  className={styles.item}>
                   <div data-aos="fade-right" className={styles.img}>
-                     <Link to={`/products/id/h4`}>
+                     <Link to={`/products/id/WIpGqa4dkc9GR80o4t2s`}>
                         <img
                            className={styles.img_width}
                            src="/images/嬉皮烘培-1.png"

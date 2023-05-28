@@ -5,7 +5,6 @@ import HomePageContent from "../components/HomePageContent";
 import { theme } from 'antd';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import { useProductById } from '../react-query';
 
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
@@ -21,10 +20,6 @@ function Home() {
   const {
     token: { colorBgBase, colorTextBase },
   } = theme.useToken();
-  // const { productId } = useParams();
-  // const { data, isLoading } = useProductById(productId);
-
-  // const product = data || {};
 
   return (
     <div className="maincontainer mainLayout">
@@ -47,8 +42,6 @@ function Home() {
       <HomePageContent
         className="layoutContent"
         title="人氣精選"
-        // product={product} 
-        // isLoading={isLoading}
       />
       {/* <ProductList products={products} className="layoutContent" /> */}
 

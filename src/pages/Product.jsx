@@ -35,8 +35,6 @@ function Product() {
 
   const product = data || {};
 
-
-
   return (
     <div className="maincontainer mainLayout">
       <ScrollToTopOnMount/>
