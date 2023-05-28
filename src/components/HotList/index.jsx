@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import React,{useEffect} from "react";
 import { Link } from 'react-router-dom';
 
-export default function HotList() {
+export default function HotList(product) {
    useEffect(() => {
       Aos.init({duration: 2000});
    }, []);

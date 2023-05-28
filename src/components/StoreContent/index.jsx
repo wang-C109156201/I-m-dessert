@@ -34,7 +34,7 @@ export default function StoreContent() {
                 id={1}
                 selected={selected}
                 to="/store/store1/cookie">
-                餅乾
+                雪球
             </MotionNavLink>
             <MotionNavLink
                 onClick={() => setSelected(2)}
@@ -48,7 +48,7 @@ export default function StoreContent() {
                 id={3}
                 selected={selected}
                 to="/store/store1/bread">
-                麵包
+                司康
             </MotionNavLink>
             </motion.ul>
     )
