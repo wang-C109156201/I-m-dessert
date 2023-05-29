@@ -36,18 +36,6 @@ export default function BrandContent({ title }) {
                 <Row className={styles.RowCol}>
                     <Col className={styles.RowCol}>
                         <div className={styles.boxstyle}>
-                            {/* <motion.h1
-                                className={styles.title}
-                                variants={typingContainer}
-                                initial="hidden"
-                                animate="show"
-                            >
-                                {"偶素甜點".split("").map((word, i) => (
-                                    <motion.span key={i} variants={typingText}>
-                                        {word}
-                                    </motion.span>
-                                ))}
-                            </motion.h1> */}
                             <img
                                 className={styles.ns}
                                 src="/images/login_logo.png"
@@ -64,7 +52,10 @@ export default function BrandContent({ title }) {
             </div>
 
             <h2 className={styles.title}>{title}</h2>
-            <BrandList />
+            <div className={styles.List}> 
+                <BrandList />
+            </div>
+            
         </div>
     );
 }

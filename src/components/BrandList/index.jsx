@@ -1,6 +1,5 @@
 import styles from './brandlist.module.css';
 import { Row, Col } from "antd";
-import BrandListR from "../BrandListR";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
@@ -14,14 +13,16 @@ export default function BrandList() {
         <div className="container">
             <Row>
                 <Col className={styles.col}>
-                    <div className={styles.Row}>
+                    <div className={styles.row}>
                         <div className={styles.item}>
                             <div data-aos="fade-right" className={styles.img}>
                                 <Link to={`https://www.greenvbakery.com/`}>
                                     <img
                                         className={styles.img_width}
                                         src="/images/Brand_gb.png"
-                                        alt="綠帶純植物烘培" />
+                                        alt="綠帶純植物烘培"
+                                    />
+
                                 </Link>
                             </div>
 
@@ -39,7 +40,37 @@ export default function BrandList() {
                         </div>
                     </div>
 
-                    <BrandListR />
+                    <div className={styles.Row}>
+                        <div className={styles.item}>
+                            <div data-aos="fade-right" className={styles.img}>
+                                <Link to={`https://www.vegandaohe.com.tw/`}>
+                                    <img
+                                        className={styles.img_width}
+                                        src="/images/Brand_yi.png"
+                                        alt="一禾堂"
+                                    />
+
+                                </Link>
+                            </div>
+
+                            <div className={styles.info}>
+                                <h2 className={styles.name}>
+                                    一禾堂
+                                </h2>
+                                <p className={styles.description}>
+                                    「荷」草、人、可。
+                                    草，植物。人，你我他。可，應許。
+                                    許下以植物生活的人，以植物生活許下的人。
+                                    「心」
+                                    當環境學家告訴我們：
+                                    世界上有45%近一半的可用陸地，全用來支持畜牧產品時，
+                                    我們知道，該是用一只綠色的餐盤，光復世界土地的時刻。
+                                </p>
+                                <div className={styles.more}>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className={styles.Row}>
                         <div className={styles.item}>
