@@ -13,6 +13,19 @@
   width: 100%;
 }
 
+.description {
+  display: flex;
+  text-align:left;
+  opacity: 1;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: SweiGothicCJKtc-Regular;
+  font-size:larger;
+  line-height:2.5rem;
+  width: 75%;
+}
+
+
 .RowCol{
   margin: 0;
   align-content:center;
@@ -160,9 +173,9 @@
 }
 
 .ns {
-  width: 25%;
-  height: 25%;
-  
+  width: 20%;
+  height: 20%;
+  margin-top: 13rem;
 }
 
 .newsbox {
