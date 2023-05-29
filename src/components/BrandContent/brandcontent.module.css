@@ -37,12 +37,10 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  /* color: #4D6447; */
-  margin-top: 50px;
+  margin-top: 120px;
   font-weight: bold;
   letter-spacing: 7px;
-  /* margin-bottom: 3rem; */
-  /* z-index: 10000; */
+  font-family: SweiGothicCJKtc-Regular;
 }
 
 .text{
@@ -56,10 +54,10 @@
   font-weight: bold;
   margin: 0;
   font-family: SweiGothicCJKtc-Regular;
-  left: -140px;
-  top: -680px;
+  left: -10rem;
+  top: -20rem;
   /* background: #4D6447; */
-  color: #FFFCFB;
+  color: #000000;
   padding: 30px;
   font-size: 2rem;
   letter-spacing:0.2rem;
@@ -126,10 +124,8 @@
 .boxstyle{
   display: flex;
   flex-direction: column;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .NewsTextBox{
@@ -147,19 +143,11 @@
   align-items: center;
 }
 
-/* .btn:active {
-  background-color: #F9CBB7;
-  color: #4D6447;
-  font-weight: bold;
-  border-color: #4D6447;
-} */
 
 .contentStyle {
   height: 160px;
-  /* color: #fff; */
   line-height: 160px;
   text-align: center;
-  /* background: #364d79; */
 }
 
 .Carousel {
@@ -169,15 +157,11 @@
 
 .news {
   width: 70%;
-  /* display: none !important; */
-  /* margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem; */
 }
 
 .ns {
-  width: 100%;
+  width: 25%;
+  height: 25%;
   
 }
 
@@ -198,11 +182,11 @@
   padding-bottom: 2.5rem;
 
 }
-@media (max-width: 1965px) { 
+
+/* @media (max-width: 1965px) { 
   .antext{
       left: 60px;
       top: -590px;
-      /* background-color: rgb(255, 255, 255); */
   }
   .estd{
 
@@ -217,7 +201,6 @@
       left: 60px;
       top: -540px;
       font-size: 1.6rem;
-      /* background-color: rgb(0, 0, 0); */
   }
   .estd{
 
@@ -233,7 +216,6 @@
       left: 60px;
       top: -540px;
       font-size: 1.4rem;
-      /* background-color: rgb(116, 153, 107); */
   }
   .estd{
 
@@ -247,7 +229,6 @@
   .antext{
       left: 4px;
       top: -450px;
-      /* background-color: rgb(255, 62, 220); */
   }
   .estd{
     left:880px;
@@ -260,7 +241,6 @@
       left: 4px;
       top: -430px;
       font-size: 1.3rem;
-      /* background-color: rgb(255, 62, 216); */
   }
   .estd{
       left:810px;
@@ -274,7 +254,6 @@
       left: 20px;
       top: -410px;
       font-size: 1.0rem;
-      /* background-color: rgb(110, 62, 255); */
   }
   .estd{
       left:600px;
@@ -288,7 +267,6 @@
       left: 4px;
       top: -410px;
       font-size: 1rem;
-      /* background-color: rgb(62, 133, 255); */
   }
   .estd{
       left:680px;
@@ -297,12 +275,11 @@
   }
 
 }
-@media (max-width: 1024px) { /*>786px*/
+@media (max-width: 1024px) { 
   .antext{
     left: 50px;
     top: -360px;
     font-size: 0.8rem;
-    /* background-color: rgb(59, 255, 78); */
   }
   .estd{
       left:700px;
@@ -311,12 +288,11 @@
   }
 
 }
-@media (max-width: 992px) { /*>786px*/
+@media (max-width: 992px) { 
   .antext{
       left: -50px;
       top: -360px;
       font-size: 0.7rem;
-      /* background-color: rgb(239, 255, 62); */
   }
   .estd{
       left:480px;
@@ -325,12 +301,11 @@
   }
 
 }
-@media (max-width: 960px) { /*>786px*/
+@media (max-width: 960px) { 
   .antext{
       left: -45px;
       top: -360px;
       font-size: 0.8rem;
-      /* background-color: rgb(255, 202, 55); */
   }
   .estd{
       left:500px;
@@ -339,12 +314,11 @@
   }
 
 }
-@media (max-width: 868px) { /*>786px*/
+@media (max-width: 868px) { 
   .antext{
       left: -30px;
       top: -300px;
       font-size: 0.2rem;
-      /* background-color: rgb(255, 77, 77); */
   }
   .estd{
       left:450px;
@@ -353,7 +327,7 @@
   }
 
 }
-@media (min-width: 769px) { /*>786px*/
+@media (min-width: 769px) { 
   .imgDispalyInMobile {
       display: none;
   }
@@ -364,24 +338,18 @@
 }
 
 
-@media (max-width: 768px) { /*<786px*/
-  /* .news {
-      display: none ;
-  } */
+@media (max-width: 768px) { 
+  
   .imgDispalyInDesktop {
       display: none;
   }
 
   .imgDispalyInMobile {
-      /* height: 63%; */
-      /*這個我先暫時註解*/
-      /*要修圖片*/
+      
       width: 100%;
   }
 
-  /* .carousel {
-      display: none!important;
-  } */
+  
   .news {
       width: 90%;
       object-position: center;
@@ -412,9 +380,4 @@
       display: none;
   }
 
-  /* .news {
-      width: 85%;
-
-  } */
-
-}
+} */

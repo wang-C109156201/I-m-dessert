@@ -25,7 +25,7 @@ function Brand() {
     <div className="maincontainer mainLayout">
       <ScrollToTopOnMount/>
       <Helmet>
-        <title>你好我事品牌介紹頁喔</title>
+        <title>品牌介紹</title>
         <style>{`
                body { 
                   background-color: ${colorBgBase}; 
@@ -41,8 +41,8 @@ function Brand() {
       />
       <BrandContent
         className="layoutContent"
-        title="人氣精選"
-      />品牌介紹拉拉拉拉拉拉
+        title="合作店家"
+      />
       {/* <ProductList products={products} className="layoutContent" /> */}
 
       <Footer className="layoutFooter" />
