@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import HippunList from "../components/HippunList";
 import hippun from "../json/hippun.json";
 import StoreContent2 from '../components/StoreContent2';
-import MySelect from '../components/MySelect';
+import MySelectL from '../components/MySelectL';
 import { theme } from 'antd';
 // import _ from 'lodash';
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ function Store2() {
         className="layoutHeader"
       />
       <StoreContent2/>
-      <MySelect/>         
+      <MySelectL/>         
       <HippunList hippun={_hippun} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>

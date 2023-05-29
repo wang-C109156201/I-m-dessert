@@ -49,8 +49,7 @@ function Category() {
         slogan="An example made by Vite."
       />
       <Logo />
-      <MySelect />
-      <ProductList products={products} isLoading={isLoading} className="layoutContent" />
+      <MySelect products={products} isLoading={isLoading}/>
       <Footer className="layoutFooter" />
     </div>
   );

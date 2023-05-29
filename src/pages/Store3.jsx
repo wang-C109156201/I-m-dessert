@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import YiiHoTangList from "../components/YiiHoTangList";
 import yiihotang from "../json/yiihotang.json";
 import StoreContent3 from '../components/StoreContent3';
-import MySelect from '../components/MySelect';
+import MySelectL from '../components/MySelectL';
 import { theme } from 'antd';
 // import _ from 'lodash';
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ function Store3() {
         className="layoutHeader"
       />
       <StoreContent3/>
-      <MySelect/>         
+      <MySelectL/>         
       <YiiHoTangList yiihotang={_yiihotang} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>

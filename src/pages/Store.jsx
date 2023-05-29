@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import GreenBakeryList from "../components/GreenBakeryList";
 import greenbakery from "../json/greenbakery.json";
 import StoreContent from '../components/StoreContent';
-import MySelect from '../components/MySelect';
+import MySelectL from '../components/MySelectL';
 import { theme } from 'antd';
 import _ from 'lodash';
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ function Store() {
         className="layoutHeader"
       />
       <StoreContent/>
-      <MySelect/>         
+      <MySelectL/>         
       <GreenBakeryList greenbakery={_greenbakery} className="layoutContent" />
       <Footer className="layoutFooter" />
     </div>

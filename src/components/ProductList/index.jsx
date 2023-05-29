@@ -10,14 +10,14 @@ export default function ProductList({ products, isLoading }) {
           {products.map(product => (
             <Col
               key={product.id}
-              sm={{ span: 12 }}//2 screen ≥ 576px
-              xs={{ span: 24 }}//1 screen < 576px
-              md={{ span: 8 }}//3 screen ≥ 768px
-              lg={{ span: 6 }} //4 screen ≥ 992px
+              sm={{ span: 12 }}
+              xs={{ span: 24 }}
+              md={{ span: 8 }}
+              lg={{ span: 6 }}
             >
-              { isLoading ? <Skeleton.Image active/> : null }
-              <Skeleton loading={isLoading} paragraph={{rows: 1,}} active/>
-                <ProductItem product={product} />
+              {isLoading ? <Skeleton.Image active /> : null}
+              <Skeleton loading={isLoading} paragraph={{ rows: 1 }} active />
+              <ProductItem product={product} />
             </Col>
           ))}
         </Row>

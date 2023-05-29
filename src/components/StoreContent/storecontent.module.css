@@ -70,7 +70,11 @@
     opacity: 1;
     transition: all 0.5s ease-in-out;
 }
-
+.navBarUnderline {
+    height: 2px;
+    background-color: #000;
+    transform-origin: left center;
+  }
 .navItem {
     font-size: larger;
     font-weight: bold;
