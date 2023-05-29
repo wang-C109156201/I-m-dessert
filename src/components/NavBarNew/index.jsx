@@ -23,10 +23,10 @@ export default function NavBar({ open, onClose }) {
           '偶素商品',
           'sub1',
           [
-            getItem(<NavLink to="/products/category">全部商品</NavLink>),
-            getItem(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
-            getItem(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
-            getItem(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
+            getItem(<NavLink to="/products/category">全部商品</NavLink>,'4'),
+            getItem(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>,'5'),
+            getItem(<NavLink to="/store3/yiihotang">一禾堂</NavLink>,'6'),
+            getItem(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>,'7'),
           ],
           ['sub1'] // 設置 defaultOpenKeys 為 ['sub1']
         ),
@@ -84,7 +84,10 @@ export default function NavBar({ open, onClose }) {
     const [mode, setMode] = useState('inline');
     const [theme, setTheme] = useState('light');
     const dropdownItems = items.find(item => item.key === 'sub1').children; // 提取 sub1 的內容
-
+    const [selectedKeys, setSelectedKeys] = useState(); 
+    const handleMenuClick = (e) => {
+        setSelectedKeys([e.key]); // 更新选中的菜单项
+        };
     return (
         <>
             <div className={styles.navBar}>
@@ -105,7 +108,9 @@ export default function NavBar({ open, onClose }) {
                         style={{
                             width:210,
                             }}
-                        defaultSelectedKeys={['1']}
+                        // defaultSelectedKeys={['1']}
+                        // selectedKeys={false} // 使用选中的菜单项
+                        // onClick={handleMenuClick} // 设置菜单项点击事件
                         mode={mode}
                         theme={theme}
                         items={items} // Replace `children` with `items`
