@@ -12,6 +12,7 @@ import Store3 from './pages/Store3';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
+import Brand from './pages/Brand';
 import { darkTheme, lightTheme } from './theme';
 import { selectLightMode } from "./redux/colorSlice";
 
@@ -24,6 +25,7 @@ function Router() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/Brand" element={<Brand />} />
             {/* <Route path="products" element={<Product />}/> */}
             <Route path="products">
               <Route path="category" element={<Category />} />

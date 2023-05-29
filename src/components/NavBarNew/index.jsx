@@ -5,11 +5,12 @@ import styles from './navbar.module.css';
 import { MailOutlined, SettingOutlined } from '@ant-design/icons';
 import UserInfoD from "../UserInfoD"
 
-function getItem(label, key,  children) {
+function getItem(label, key,  children, defaultOpenKeys) {
     return {
       key,
       children,
       label,
+      defaultOpenKeys
     };
   }
   
@@ -17,16 +18,20 @@ export default function NavBar({ open, onClose }) {
     const items = [
         getItem(<NavLink to="/">首頁</NavLink>, '1'),
         getItem('最新消息', '2'),
-        getItem('品牌介紹', '3'),
-        getItem('偶素商品', 'sub1', [
+        getItem(<NavLink to="/Brand">品牌介紹</NavLink>, '3'),
+        getItem(
+          '偶素商品',
+          'sub1',
+          [
             getItem(<NavLink to="/products/category">全部商品</NavLink>),
             getItem(<NavLink to="/store/store">綠帶純植物烘焙</NavLink>),
             getItem(<NavLink to="/store3/yiihotang">一禾堂</NavLink>),
             getItem(<NavLink to="/store2/hippun">嬉皮麵包</NavLink>),
-        ]),
+          ],
+          ['sub1'] // 設置 defaultOpenKeys 為 ['sub1']
+        ),
         getItem('聯絡我們', '8'),
     ];
-      
      
     const NavBarContent = () => (
         <>
@@ -38,7 +43,7 @@ export default function NavBar({ open, onClose }) {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 最新消息
             </NavLink>
-            <NavLink to="/"
+            <NavLink to="/Brand"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 品牌介紹
             </NavLink>
@@ -101,7 +106,6 @@ export default function NavBar({ open, onClose }) {
                             width:210,
                             }}
                         defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
                         mode={mode}
                         theme={theme}
                         items={items} // Replace `children` with `items`
